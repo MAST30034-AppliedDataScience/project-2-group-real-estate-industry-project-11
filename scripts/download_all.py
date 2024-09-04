@@ -17,7 +17,7 @@ def test_location(suburb_url):
 #### DOWNLOADING FUNCTION ------------------------------------------------------
 
 # DO NOT CHANGE
-HEADER = {'User-Agent': "University of Melbourne MAST30034 (mtpawlus32@gmail.com)"}
+HEADER = {'User-Agent': "University of Melbourne MAST30034"}
 SUBURB_URL = "https://www.oldlistings.com.au/real-estate/VIC/Williamstown+North/3016/rent/"
 DST_SUFFIX = "../data/landing/"
 

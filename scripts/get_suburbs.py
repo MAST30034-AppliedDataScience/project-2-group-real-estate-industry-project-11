@@ -26,7 +26,7 @@ def get_maximum(html_string):
 ## GET THE PAGES TO VISIT ------------------------------------------------------------------------------
 
 URL = "https://www.oldlistings.com.au/site-map?state=VIC"
-HEADER = {'User-Agent': "University of Melbourne MAST30034 (mtpawlus32@gmail.com)"}
+HEADER = {'User-Agent': "University of Melbourne MAST30034"}
 TIME_HALT = 10
 
 # get the first page
