@@ -2,19 +2,15 @@ import requests
 import re
 import os
 import time
+import pandas as pd
 
-#### TO DO --------------------------------------------------------
+#### TO DO -----------------------------------------------------------------------------------------------
 
-# used to test
+# used to test if page has records recent enough
 def test_recent_enough(response_page):
     return True
 
-# used to test if the location is close enough to melbourne (exclude places like bendigo)
-def test_location(suburb_url):
-    # good use the postal code or something with RE
-    return True
-
-#### DOWNLOADING FUNCTION ------------------------------------------------------
+#### CONTSTANTS -----------------------------------------------------------------------------------------------
 
 # DO NOT CHANGE
 HEADER = {'User-Agent': "University of Melbourne MAST30034"}
@@ -22,30 +18,27 @@ SUBURB_URL = "https://www.oldlistings.com.au/real-estate/VIC/Williamstown+North/
 DST_SUFFIX = "../data/landing/"
 
 SUBRUB_SEARCH = r'.*\/VIC\/([^\/]+)\/\d{4}' # used to extract the suburb from the url
-MAXIMUM = 5000 # the maximum amount of pages to get per suburb (13 hours, don't get here)
 TIME_HALT = 10.2 # the seconds at which to request each page (more than 10 just in case)
+
+#### FUNCTIONS -----------------------------------------------------------------------------------------------
 
 """"Starts at the suburb_url, then append /i onto it continuously until error code status occurs, saving all html page files
 NOTE:
     - Will create a directory even for empty files
     - Assumes /1 works
-    - Will automatically sleep"""
-def get_suburb_files(suburb_url):
+    - Will automatically sleep (space between requests)"""
+def get_suburb_files(suburb_row):
     # get the suburb name formatted correctly
-    suburb_name = re.search(SUBRUB_SEARCH, suburb_url).group(1)
-    suburb_name = re.sub(r'\+', ' ', suburb_name) # replace '+' with ' ' all occurences
-
-    # if not close enough to melbourne, delete
-    if (not test_location(SUBURB_URL)):
-        print("not interest this location")
-        return
+    suburb_url = suburb_row["URL"]
+    suburb_name = suburb_row["suburb name"]
+    maximum = suburb_row["count"]
 
     # create the output directory path
     if (not os.path.exists(DST_SUFFIX + suburb_name)):
         os.mkdir(DST_SUFFIX + suburb_name)
 
     # go through each consecutive page until get an error
-    for i in range(1, MAXIMUM+1):
+    for i in range(1, maximum+1):
         # record the start time
         start_time = time.time()
 
@@ -83,16 +76,13 @@ def get_suburb_files(suburb_url):
 
 ### EXECUTION -----------------------------------------------------------
 
-SUBURB_FILE = "../data/landing/suburbs.txt"
+SUBURB_CSV = "../data/landing/suburbs.csv"
 
-with open(SUBURB_FILE, "r") as suburb_file:
-    # get all the urls
-    suburb_urls = suburb_file.readlines()
+suburbs_df = pd.read_csv(SUBURB_CSV)
 
-    # remove the newlines
-    suburb_urls = list(map(lambda x: x.strip(), suburb_urls))
+# for each suburb, write all the subfiles
+for i, suburb_row in suburbs_df.iterrows():
+    get_suburb_files(suburb_row)
 
-    for suburb_url in suburb_urls:
-        get_suburb_files(suburb_url)
-
+# just to ensure everything works
 time.sleep(10)

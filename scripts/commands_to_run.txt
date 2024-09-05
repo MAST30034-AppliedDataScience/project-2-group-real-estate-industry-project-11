@@ -1,3 +1,0 @@
-# bash command to delete all empty files in data/landing
-#   NOTE: replace [path to landing] with relative path
-find [path to landing] -type d -empty -exec rmdir {} \; 2> /dev/null
