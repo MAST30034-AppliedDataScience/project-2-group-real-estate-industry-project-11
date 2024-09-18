@@ -45,6 +45,9 @@ Time dependent:
         - Population estimates by age and sex, by SA2, GDA94
             - Timeline: 2023
             - URL: https://www.abs.gov.au/statistics/people/population/regional-population-age-and-sex/2023/32350_ERP_Age_Sex_SA2_GDA94_2023_gpkg.zip (GeoPackages.zip)
+        - Population projections (based on assumptions of fertility, mortality and migration) for Victoria
+            - Timeline: 2022 (base) to 2071
+            - URL: https://www.abs.gov.au/statistics/people/population/population-projections-australia/latest-release#victoria
 
 Location dependent:
 
