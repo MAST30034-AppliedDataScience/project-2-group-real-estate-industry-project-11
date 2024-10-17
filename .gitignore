@@ -4,7 +4,9 @@ __pycache__/
 *$py.class
 
 # C extensions
-*.so
+*.
+
+old stuff/
 
 # Distribution / packaging
 .Python
@@ -129,11 +131,12 @@ dmypy.json
 .pyre/
 
 # data
+data/curated/
+data/raw/
+data/landing/
 data/1. landing/
 data/2. raw/
 data/3. curated/
-
-
 
 # OSX .DS_Store file
 .DS_Store
