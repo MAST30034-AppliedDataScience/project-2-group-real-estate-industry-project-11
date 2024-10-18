@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2985e111ca234ae06c442e843576e0ab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2985e111ca234ae06c442e843576e0ab" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2985e111ca234ae06c442e843576e0ab = L.map(
+                "map_2985e111ca234ae06c442e843576e0ab",
+                {
+                    center: [-37.8136, 144.9631],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_433f71c6756632b35ffc1d30f3540d80 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_433f71c6756632b35ffc1d30f3540d80.addTo(map_2985e111ca234ae06c442e843576e0ab);
+        
+    
+            var marker_78a3bb9fbfeadc17e00be1fe0f1159f8 = L.marker(
+                [-37.81, 144.965],
+                {}
+            ).addTo(map_2985e111ca234ae06c442e843576e0ab);
+        
+    
+        var popup_481a81c485129ab3f20b3b2f188c3dc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_592e86db266d1e8ab6b26002325a381c = $(`<div id="html_592e86db266d1e8ab6b26002325a381c" style="width: 100.0%; height: 100.0%;">Melbourne CBD - North (38400 people per sq km)</div>`)[0];
+                popup_481a81c485129ab3f20b3b2f188c3dc4.setContent(html_592e86db266d1e8ab6b26002325a381c);
+            
+        
+
+        marker_78a3bb9fbfeadc17e00be1fe0f1159f8.bindPopup(popup_481a81c485129ab3f20b3b2f188c3dc4)
+        ;
+
+        
+    
+    
+            var marker_e76c88a7265ba9bbf7d852bfa3203230 = L.marker(
+                [-37.825, 144.965],
+                {}
+            ).addTo(map_2985e111ca234ae06c442e843576e0ab);
+        
+    
+        var popup_5885177e8060b8deaa64b51e083f2064 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2de23e5777c1db4eaa386c39660d63d = $(`<div id="html_f2de23e5777c1db4eaa386c39660d63d" style="width: 100.0%; height: 100.0%;">Southbank - East (23300 people per sq km)</div>`)[0];
+                popup_5885177e8060b8deaa64b51e083f2064.setContent(html_f2de23e5777c1db4eaa386c39660d63d);
+            
+        
+
+        marker_e76c88a7265ba9bbf7d852bfa3203230.bindPopup(popup_5885177e8060b8deaa64b51e083f2064)
+        ;
+
+        
+    
+    
+            var marker_a4becdff7d0b12a18fa0ab5fdd72b291 = L.marker(
+                [-37.815, 144.955],
+                {}
+            ).addTo(map_2985e111ca234ae06c442e843576e0ab);
+        
+    
+        var popup_d1cafad9e67c2fc3a89d5895aeb7cc44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d3e27d91354b5f70849a1e69623bb8e = $(`<div id="html_8d3e27d91354b5f70849a1e69623bb8e" style="width: 100.0%; height: 100.0%;">Melbourne CBD - West (19900 people per sq km)</div>`)[0];
+                popup_d1cafad9e67c2fc3a89d5895aeb7cc44.setContent(html_8d3e27d91354b5f70849a1e69623bb8e);
+            
+        
+
+        marker_a4becdff7d0b12a18fa0ab5fdd72b291.bindPopup(popup_d1cafad9e67c2fc3a89d5895aeb7cc44)
+        ;
+
+        
+    
+    
+            tile_layer_433f71c6756632b35ffc1d30f3540d80.addTo(map_2985e111ca234ae06c442e843576e0ab);
+        
+</script>
+</html>

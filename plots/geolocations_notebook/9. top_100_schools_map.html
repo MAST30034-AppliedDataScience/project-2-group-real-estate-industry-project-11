@@ -1,0 +1,2772 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_73e5df3086506ed03db2a17abf7af4cf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_73e5df3086506ed03db2a17abf7af4cf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_73e5df3086506ed03db2a17abf7af4cf = L.map(
+                "map_73e5df3086506ed03db2a17abf7af4cf",
+                {
+                    center: [-37.4713, 144.7852],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0a0889a783a76049b826abd0c8c77e2b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0a0889a783a76049b826abd0c8c77e2b.addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var marker_e4cfbf3b7c82cc74318af35ac0faba56 = L.marker(
+                [-37.55965, 143.83365],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_d3f2400f77bc2b8e9fb847c7343ab13e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e4cfbf3b7c82cc74318af35ac0faba56.setIcon(icon_d3f2400f77bc2b8e9fb847c7343ab13e);
+        
+    
+        var popup_aa0c765303a109bb09e794bc394753b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a4d4dc1db60f4a9ad7f6ec0256a2c3f = $(`<div id="html_1a4d4dc1db60f4a9ad7f6ec0256a2c3f" style="width: 100.0%; height: 100.0%;">School: ballarat clarendon college<br>Median Study Score: 39.0</div>`)[0];
+                popup_aa0c765303a109bb09e794bc394753b0.setContent(html_1a4d4dc1db60f4a9ad7f6ec0256a2c3f);
+            
+        
+
+        marker_e4cfbf3b7c82cc74318af35ac0faba56.bindPopup(popup_aa0c765303a109bb09e794bc394753b0)
+        ;
+
+        
+    
+    
+            var marker_b412d2bc11a52e2b324ea73e2e4544df = L.marker(
+                [-37.81111, 145.03918],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_8ea75ae7f993b8ccb88196e7580e2b9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b412d2bc11a52e2b324ea73e2e4544df.setIcon(icon_8ea75ae7f993b8ccb88196e7580e2b9c);
+        
+    
+        var popup_889aca704c0be97f29784ce895154661 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c5c3bf7632a0e4b869d88cb7ae24617 = $(`<div id="html_8c5c3bf7632a0e4b869d88cb7ae24617" style="width: 100.0%; height: 100.0%;">School: ruyton girls school<br>Median Study Score: 37.0</div>`)[0];
+                popup_889aca704c0be97f29784ce895154661.setContent(html_8c5c3bf7632a0e4b869d88cb7ae24617);
+            
+        
+
+        marker_b412d2bc11a52e2b324ea73e2e4544df.bindPopup(popup_889aca704c0be97f29784ce895154661)
+        ;
+
+        
+    
+    
+            var marker_69641746f581fce67b7d480f2ec2be31 = L.marker(
+                [-37.87674, 145.13629],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_2fb6d066ba6be31b309d6f660739db7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_69641746f581fce67b7d480f2ec2be31.setIcon(icon_2fb6d066ba6be31b309d6f660739db7c);
+        
+    
+        var popup_59abdc4edaddf2a6e93a8d3eac2fcc00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8c4f0f714ae2da39ec4ac7cd0db6bed = $(`<div id="html_e8c4f0f714ae2da39ec4ac7cd0db6bed" style="width: 100.0%; height: 100.0%;">School: huntingtower school<br>Median Study Score: 37.0</div>`)[0];
+                popup_59abdc4edaddf2a6e93a8d3eac2fcc00.setContent(html_e8c4f0f714ae2da39ec4ac7cd0db6bed);
+            
+        
+
+        marker_69641746f581fce67b7d480f2ec2be31.bindPopup(popup_59abdc4edaddf2a6e93a8d3eac2fcc00)
+        ;
+
+        
+    
+    
+            var marker_8a67b404941da01a585dad7c4d3d2e31 = L.marker(
+                [-37.84722, 145.11777],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_a2c91c1080a3fd9fcc7d24982a58de56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8a67b404941da01a585dad7c4d3d2e31.setIcon(icon_a2c91c1080a3fd9fcc7d24982a58de56);
+        
+    
+        var popup_2fb974a93a593b616e94c9b6c7aaa079 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecf3d49072dc5ea68e89bc8d6d34d1c3 = $(`<div id="html_ecf3d49072dc5ea68e89bc8d6d34d1c3" style="width: 100.0%; height: 100.0%;">School: mount scopus memorial college<br>Median Study Score: 37.0</div>`)[0];
+                popup_2fb974a93a593b616e94c9b6c7aaa079.setContent(html_ecf3d49072dc5ea68e89bc8d6d34d1c3);
+            
+        
+
+        marker_8a67b404941da01a585dad7c4d3d2e31.bindPopup(popup_2fb974a93a593b616e94c9b6c7aaa079)
+        ;
+
+        
+    
+    
+            var marker_70abfa1ed5ff37e30e4ef61b6bcf2591 = L.marker(
+                [-37.84227, 145.04337],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_cf422305d739dc8bf0fe20752dc85456 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_70abfa1ed5ff37e30e4ef61b6bcf2591.setIcon(icon_cf422305d739dc8bf0fe20752dc85456);
+        
+    
+        var popup_9aeea3cdfbbfb3d025a10cf7f52a9a9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f5834fa54fbc428d3a8c30dbbe020e7 = $(`<div id="html_6f5834fa54fbc428d3a8c30dbbe020e7" style="width: 100.0%; height: 100.0%;">School: bialik college<br>Median Study Score: 37.0</div>`)[0];
+                popup_9aeea3cdfbbfb3d025a10cf7f52a9a9d.setContent(html_6f5834fa54fbc428d3a8c30dbbe020e7);
+            
+        
+
+        marker_70abfa1ed5ff37e30e4ef61b6bcf2591.bindPopup(popup_9aeea3cdfbbfb3d025a10cf7f52a9a9d)
+        ;
+
+        
+    
+    
+            var marker_a8e57be411acd6c91edf50baa1c69c37 = L.marker(
+                [-37.87323, 144.98349],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_00336dc18badf0b5be0b24a393a5b090 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a8e57be411acd6c91edf50baa1c69c37.setIcon(icon_00336dc18badf0b5be0b24a393a5b090);
+        
+    
+        var popup_f5abf54ff6112dcd8affa9ee3911c786 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d8644c25d3d353c1b1ee76133545c0d = $(`<div id="html_2d8644c25d3d353c1b1ee76133545c0d" style="width: 100.0%; height: 100.0%;">School: yesodei hatorah college<br>Median Study Score: 37.0</div>`)[0];
+                popup_f5abf54ff6112dcd8affa9ee3911c786.setContent(html_2d8644c25d3d353c1b1ee76133545c0d);
+            
+        
+
+        marker_a8e57be411acd6c91edf50baa1c69c37.bindPopup(popup_f5abf54ff6112dcd8affa9ee3911c786)
+        ;
+
+        
+    
+    
+            var marker_3c5768504ba631b4fd2b075aa3f66fca = L.marker(
+                [-37.83683, 144.99531],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_f48ddd46a35d655fd5b1acde0babb254 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c5768504ba631b4fd2b075aa3f66fca.setIcon(icon_f48ddd46a35d655fd5b1acde0babb254);
+        
+    
+        var popup_0f7056086fb33efcb32f6009099007b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d6515a52b5ab0b02dbc6c0feb544775 = $(`<div id="html_4d6515a52b5ab0b02dbc6c0feb544775" style="width: 100.0%; height: 100.0%;">School: melbourne high school<br>Median Study Score: 36.0</div>`)[0];
+                popup_0f7056086fb33efcb32f6009099007b3.setContent(html_4d6515a52b5ab0b02dbc6c0feb544775);
+            
+        
+
+        marker_3c5768504ba631b4fd2b075aa3f66fca.bindPopup(popup_0f7056086fb33efcb32f6009099007b3)
+        ;
+
+        
+    
+    
+            var marker_92e0e3b3bea9aab39795ee68ffb00519 = L.marker(
+                [-38.0385, 145.33656],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_df2b8207fe92b6b95175c421d9d7349f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_92e0e3b3bea9aab39795ee68ffb00519.setIcon(icon_df2b8207fe92b6b95175c421d9d7349f);
+        
+    
+        var popup_52b4ac5401b1bf96f4174530152048ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45894bcad018033c972f80e347b52e12 = $(`<div id="html_45894bcad018033c972f80e347b52e12" style="width: 100.0%; height: 100.0%;">School: nossal high school<br>Median Study Score: 36.0</div>`)[0];
+                popup_52b4ac5401b1bf96f4174530152048ed.setContent(html_45894bcad018033c972f80e347b52e12);
+            
+        
+
+        marker_92e0e3b3bea9aab39795ee68ffb00519.bindPopup(popup_52b4ac5401b1bf96f4174530152048ed)
+        ;
+
+        
+    
+    
+            var marker_8d465814076e9b2c4db4fe6f74bdf0a6 = L.marker(
+                [-37.86145, 145.05464],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_5d51e768c9442f3cd3b629e535cdbe4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8d465814076e9b2c4db4fe6f74bdf0a6.setIcon(icon_5d51e768c9442f3cd3b629e535cdbe4a);
+        
+    
+        var popup_7c793e1ff5ae4784c7dd0d6de4ad4aa4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01fa263d01bd850ccda0ac9d0608143e = $(`<div id="html_01fa263d01bd850ccda0ac9d0608143e" style="width: 100.0%; height: 100.0%;">School: korowa anglican girls school<br>Median Study Score: 36.0</div>`)[0];
+                popup_7c793e1ff5ae4784c7dd0d6de4ad4aa4.setContent(html_01fa263d01bd850ccda0ac9d0608143e);
+            
+        
+
+        marker_8d465814076e9b2c4db4fe6f74bdf0a6.bindPopup(popup_7c793e1ff5ae4784c7dd0d6de4ad4aa4)
+        ;
+
+        
+    
+    
+            var marker_c23154a179a2dce57b88d37042a556ad = L.marker(
+                [-37.86175, 145.05157],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_9cb76c673d5eff05aa7af7dba79c88e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c23154a179a2dce57b88d37042a556ad.setIcon(icon_9cb76c673d5eff05aa7af7dba79c88e1);
+        
+    
+        var popup_62ef6c375208265b80d89bb2026669b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38418568344c9779e1abd1e18363cf91 = $(`<div id="html_38418568344c9779e1abd1e18363cf91" style="width: 100.0%; height: 100.0%;">School: sacre coeur<br>Median Study Score: 36.0</div>`)[0];
+                popup_62ef6c375208265b80d89bb2026669b0.setContent(html_38418568344c9779e1abd1e18363cf91);
+            
+        
+
+        marker_c23154a179a2dce57b88d37042a556ad.bindPopup(popup_62ef6c375208265b80d89bb2026669b0)
+        ;
+
+        
+    
+    
+            var marker_ab320308405bfff28b8503c136ed9c2b = L.marker(
+                [-37.8383, 145.02127],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_5563b209a98e5f1d13e8882171c07edd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ab320308405bfff28b8503c136ed9c2b.setIcon(icon_5563b209a98e5f1d13e8882171c07edd);
+        
+    
+        var popup_6aaf01c2f75663493f0143466b93a553 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b09bbe141a4295c40108afc702340fb = $(`<div id="html_7b09bbe141a4295c40108afc702340fb" style="width: 100.0%; height: 100.0%;">School: st catherines school<br>Median Study Score: 36.0</div>`)[0];
+                popup_6aaf01c2f75663493f0143466b93a553.setContent(html_7b09bbe141a4295c40108afc702340fb);
+            
+        
+
+        marker_ab320308405bfff28b8503c136ed9c2b.bindPopup(popup_6aaf01c2f75663493f0143466b93a553)
+        ;
+
+        
+    
+    
+            var marker_b424fd51113b2103ceda8c2cfe8d9a0e = L.marker(
+                [-37.98938, 145.06346],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_8a1475a6e5bd6a14d65baafaee0b6dcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b424fd51113b2103ceda8c2cfe8d9a0e.setIcon(icon_8a1475a6e5bd6a14d65baafaee0b6dcd);
+        
+    
+        var popup_273b7d7fc8daed7b801f5f0201de1c9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b163ad89d1732b342f6874d5631ce13 = $(`<div id="html_7b163ad89d1732b342f6874d5631ce13" style="width: 100.0%; height: 100.0%;">School: mentone girls grammar school<br>Median Study Score: 36.0</div>`)[0];
+                popup_273b7d7fc8daed7b801f5f0201de1c9c.setContent(html_7b163ad89d1732b342f6874d5631ce13);
+            
+        
+
+        marker_b424fd51113b2103ceda8c2cfe8d9a0e.bindPopup(popup_273b7d7fc8daed7b801f5f0201de1c9c)
+        ;
+
+        
+    
+    
+            var marker_1ee6013860b080637fb5af9acb8286f7 = L.marker(
+                [-37.84819, 145.01489],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_d9ba39d9a6b09c6559d054352c33dad8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1ee6013860b080637fb5af9acb8286f7.setIcon(icon_d9ba39d9a6b09c6559d054352c33dad8);
+        
+    
+        var popup_27d57898184e223eed2eb53d146524ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4436eb351ad93132cf0c88cdd54314ea = $(`<div id="html_4436eb351ad93132cf0c88cdd54314ea" style="width: 100.0%; height: 100.0%;">School: loreto mandeville hall<br>Median Study Score: 36.0</div>`)[0];
+                popup_27d57898184e223eed2eb53d146524ac.setContent(html_4436eb351ad93132cf0c88cdd54314ea);
+            
+        
+
+        marker_1ee6013860b080637fb5af9acb8286f7.bindPopup(popup_27d57898184e223eed2eb53d146524ac)
+        ;
+
+        
+    
+    
+            var marker_0c502139daa4388fb9e053fd720fc128 = L.marker(
+                [-37.91111, 144.99352],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_6f8f20e34adfe37b3f2751da903183d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0c502139daa4388fb9e053fd720fc128.setIcon(icon_6f8f20e34adfe37b3f2751da903183d8);
+        
+    
+        var popup_09b7332770642894f519e9c2a2949f71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46bda85e66189e620641d76d4679489c = $(`<div id="html_46bda85e66189e620641d76d4679489c" style="width: 100.0%; height: 100.0%;">School: brighton grammar school<br>Median Study Score: 36.0</div>`)[0];
+                popup_09b7332770642894f519e9c2a2949f71.setContent(html_46bda85e66189e620641d76d4679489c);
+            
+        
+
+        marker_0c502139daa4388fb9e053fd720fc128.bindPopup(popup_09b7332770642894f519e9c2a2949f71)
+        ;
+
+        
+    
+    
+            var marker_9f77ec5fa6e0ed15647b06457ea7dd44 = L.marker(
+                [-37.89287, 145.00663],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_926c4509c7de83df0788374781f901ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9f77ec5fa6e0ed15647b06457ea7dd44.setIcon(icon_926c4509c7de83df0788374781f901ba);
+        
+    
+        var popup_eae54e84ed46e0a299fef9356145a8c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e0049cd46afdfe30af41c40b7a82693 = $(`<div id="html_3e0049cd46afdfe30af41c40b7a82693" style="width: 100.0%; height: 100.0%;">School: leibler yavneh college<br>Median Study Score: 36.0</div>`)[0];
+                popup_eae54e84ed46e0a299fef9356145a8c5.setContent(html_3e0049cd46afdfe30af41c40b7a82693);
+            
+        
+
+        marker_9f77ec5fa6e0ed15647b06457ea7dd44.bindPopup(popup_eae54e84ed46e0a299fef9356145a8c5)
+        ;
+
+        
+    
+    
+            var marker_bed3c90092c0fc150152c9ac31126c45 = L.marker(
+                [-37.85823, 145.0105],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_b5f8acc4b2f2b173771bf63d0f49db57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bed3c90092c0fc150152c9ac31126c45.setIcon(icon_b5f8acc4b2f2b173771bf63d0f49db57);
+        
+    
+        var popup_0d8345bb4dd08490da28416c922cd300 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcf9aab748c1d0ab17b380a6687d1d01 = $(`<div id="html_bcf9aab748c1d0ab17b380a6687d1d01" style="width: 100.0%; height: 100.0%;">School: the king david school<br>Median Study Score: 36.0</div>`)[0];
+                popup_0d8345bb4dd08490da28416c922cd300.setContent(html_bcf9aab748c1d0ab17b380a6687d1d01);
+            
+        
+
+        marker_bed3c90092c0fc150152c9ac31126c45.bindPopup(popup_0d8345bb4dd08490da28416c922cd300)
+        ;
+
+        
+    
+    
+            var marker_2b30ff8bf417ad06559942318eb3571d = L.marker(
+                [-37.99555, 145.14477],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_aa92ffd34df9460cfd843669abe1998f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b30ff8bf417ad06559942318eb3571d.setIcon(icon_aa92ffd34df9460cfd843669abe1998f);
+        
+    
+        var popup_61f00612d086a7565bf839aa261c7e2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fedf9bcd7399de21de802267039b93e3 = $(`<div id="html_fedf9bcd7399de21de802267039b93e3" style="width: 100.0%; height: 100.0%;">School: haileybury girls college<br>Median Study Score: 36.0</div>`)[0];
+                popup_61f00612d086a7565bf839aa261c7e2d.setContent(html_fedf9bcd7399de21de802267039b93e3);
+            
+        
+
+        marker_2b30ff8bf417ad06559942318eb3571d.bindPopup(popup_61f00612d086a7565bf839aa261c7e2d)
+        ;
+
+        
+    
+    
+            var marker_8efa7c6cc886c7aa508f3d19ddbd4bd1 = L.marker(
+                [-37.91422, 145.12869],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_6af59f4d032d00c086eec77e5fc6a8b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8efa7c6cc886c7aa508f3d19ddbd4bd1.setIcon(icon_6af59f4d032d00c086eec77e5fc6a8b5);
+        
+    
+        var popup_2fc1426ff65fb578aafc485d56fac5b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84d9b6ba6975f9b184bc10b3ddad66e2 = $(`<div id="html_84d9b6ba6975f9b184bc10b3ddad66e2" style="width: 100.0%; height: 100.0%;">School: john monash science school<br>Median Study Score: 35.0</div>`)[0];
+                popup_2fc1426ff65fb578aafc485d56fac5b8.setContent(html_84d9b6ba6975f9b184bc10b3ddad66e2);
+            
+        
+
+        marker_8efa7c6cc886c7aa508f3d19ddbd4bd1.bindPopup(popup_2fc1426ff65fb578aafc485d56fac5b8)
+        ;
+
+        
+    
+    
+            var marker_856e9aa52990f6e221493e1184e04b0c = L.marker(
+                [-37.89385, 144.70075],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_9b45fc9e151f1076eca27b687c690acf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_856e9aa52990f6e221493e1184e04b0c.setIcon(icon_9b45fc9e151f1076eca27b687c690acf);
+        
+    
+        var popup_b98c9cd39de4ebcad72d0f90d9d2e9ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed2334dfc8b3bfd491afe026c95775d3 = $(`<div id="html_ed2334dfc8b3bfd491afe026c95775d3" style="width: 100.0%; height: 100.0%;">School: suzanne cory high school<br>Median Study Score: 35.0</div>`)[0];
+                popup_b98c9cd39de4ebcad72d0f90d9d2e9ac.setContent(html_ed2334dfc8b3bfd491afe026c95775d3);
+            
+        
+
+        marker_856e9aa52990f6e221493e1184e04b0c.bindPopup(popup_b98c9cd39de4ebcad72d0f90d9d2e9ac)
+        ;
+
+        
+    
+    
+            var marker_abc8e8d7c0af131acb52d23cdec050e1 = L.marker(
+                [-37.81516, 145.08033],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_f99a35c0efd737e84782a38be1fdde9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_abc8e8d7c0af131acb52d23cdec050e1.setIcon(icon_f99a35c0efd737e84782a38be1fdde9f);
+        
+    
+        var popup_9e57c0214f6470c028e66878cc699dff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1864b8d9befa5081dbf190eda1621d3d = $(`<div id="html_1864b8d9befa5081dbf190eda1621d3d" style="width: 100.0%; height: 100.0%;">School: fintona girls school<br>Median Study Score: 35.0</div>`)[0];
+                popup_9e57c0214f6470c028e66878cc699dff.setContent(html_1864b8d9befa5081dbf190eda1621d3d);
+            
+        
+
+        marker_abc8e8d7c0af131acb52d23cdec050e1.bindPopup(popup_9e57c0214f6470c028e66878cc699dff)
+        ;
+
+        
+    
+    
+            var marker_618386e9e3d55a2e87e3c90057e50d35 = L.marker(
+                [-37.84856, 145.107],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_675d9d88f6366ba5908508ad4bfec955 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_618386e9e3d55a2e87e3c90057e50d35.setIcon(icon_675d9d88f6366ba5908508ad4bfec955);
+        
+    
+        var popup_e4d7c12990e9ed950898ae9890c07abe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_daf11e1096153ac2bba64e051f283f85 = $(`<div id="html_daf11e1096153ac2bba64e051f283f85" style="width: 100.0%; height: 100.0%;">School: presbyterian ladies college<br>Median Study Score: 35.0</div>`)[0];
+                popup_e4d7c12990e9ed950898ae9890c07abe.setContent(html_daf11e1096153ac2bba64e051f283f85);
+            
+        
+
+        marker_618386e9e3d55a2e87e3c90057e50d35.bindPopup(popup_e4d7c12990e9ed950898ae9890c07abe)
+        ;
+
+        
+    
+    
+            var marker_ab1976bf324aec8f72de89a9c20c6303 = L.marker(
+                [-37.92863, 145.00755],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_4f7da05b78c32c908306da33266cc5f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ab1976bf324aec8f72de89a9c20c6303.setIcon(icon_4f7da05b78c32c908306da33266cc5f9);
+        
+    
+        var popup_3a2c93697fe59184d6f60469cc27ac02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f898a1179444218de9d2eadef88f5685 = $(`<div id="html_f898a1179444218de9d2eadef88f5685" style="width: 100.0%; height: 100.0%;">School: st leonards college<br>Median Study Score: 35.0</div>`)[0];
+                popup_3a2c93697fe59184d6f60469cc27ac02.setContent(html_f898a1179444218de9d2eadef88f5685);
+            
+        
+
+        marker_ab1976bf324aec8f72de89a9c20c6303.bindPopup(popup_3a2c93697fe59184d6f60469cc27ac02)
+        ;
+
+        
+    
+    
+            var marker_be1c6432f9ecc7d03da3952cd91b4138 = L.marker(
+                [-37.98769, 145.06812],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_7445a805aef080e790e66ffdf7269a94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be1c6432f9ecc7d03da3952cd91b4138.setIcon(icon_7445a805aef080e790e66ffdf7269a94);
+        
+    
+        var popup_5827283c5de41496f88cdabe91ab6cce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0af4a48de97bcceb5a6b693d318c50a = $(`<div id="html_f0af4a48de97bcceb5a6b693d318c50a" style="width: 100.0%; height: 100.0%;">School: mentone grammar school<br>Median Study Score: 35.0</div>`)[0];
+                popup_5827283c5de41496f88cdabe91ab6cce.setContent(html_f0af4a48de97bcceb5a6b693d318c50a);
+            
+        
+
+        marker_be1c6432f9ecc7d03da3952cd91b4138.bindPopup(popup_5827283c5de41496f88cdabe91ab6cce)
+        ;
+
+        
+    
+    
+            var marker_0eeea4975b6ab15c08fa73c7d3de5bbc = L.marker(
+                [-37.99598, 145.14643],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_63afab6448fdf838c543264fb0dc47af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0eeea4975b6ab15c08fa73c7d3de5bbc.setIcon(icon_63afab6448fdf838c543264fb0dc47af);
+        
+    
+        var popup_dcd6519f75ede25bc1efa90fb3b946d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73034d8f6175224f33dabfa38b3db8f6 = $(`<div id="html_73034d8f6175224f33dabfa38b3db8f6" style="width: 100.0%; height: 100.0%;">School: haileybury college<br>Median Study Score: 35.0</div>`)[0];
+                popup_dcd6519f75ede25bc1efa90fb3b946d9.setContent(html_73034d8f6175224f33dabfa38b3db8f6);
+            
+        
+
+        marker_0eeea4975b6ab15c08fa73c7d3de5bbc.bindPopup(popup_dcd6519f75ede25bc1efa90fb3b946d9)
+        ;
+
+        
+    
+    
+            var marker_2901c5b3ec5fa0966a08884f376ecdca = L.marker(
+                [-37.81609, 145.06641],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_7acc75fc658c661d2a5b78311b148462 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2901c5b3ec5fa0966a08884f376ecdca.setIcon(icon_7acc75fc658c661d2a5b78311b148462);
+        
+    
+        var popup_167e4e35b818cdeec39360a1bdeae443 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8355bc08ab83c3e0a49af6d6c40cdf93 = $(`<div id="html_8355bc08ab83c3e0a49af6d6c40cdf93" style="width: 100.0%; height: 100.0%;">School: camberwell grammar school<br>Median Study Score: 35.0</div>`)[0];
+                popup_167e4e35b818cdeec39360a1bdeae443.setContent(html_8355bc08ab83c3e0a49af6d6c40cdf93);
+            
+        
+
+        marker_2901c5b3ec5fa0966a08884f376ecdca.bindPopup(popup_167e4e35b818cdeec39360a1bdeae443)
+        ;
+
+        
+    
+    
+            var marker_a6a754d543b42c9f6b71df2496944fe6 = L.marker(
+                [-37.8354, 145.0247],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_91d3e2fb340d89e9c397b27836256a35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a6a754d543b42c9f6b71df2496944fe6.setIcon(icon_91d3e2fb340d89e9c397b27836256a35);
+        
+    
+        var popup_6593fa0a9cc1cd806f88bffa276db168 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f6997e43aebeb24065df9e0b3a8caa3 = $(`<div id="html_9f6997e43aebeb24065df9e0b3a8caa3" style="width: 100.0%; height: 100.0%;">School: st kevins college<br>Median Study Score: 35.0</div>`)[0];
+                popup_6593fa0a9cc1cd806f88bffa276db168.setContent(html_9f6997e43aebeb24065df9e0b3a8caa3);
+            
+        
+
+        marker_a6a754d543b42c9f6b71df2496944fe6.bindPopup(popup_6593fa0a9cc1cd806f88bffa276db168)
+        ;
+
+        
+    
+    
+            var marker_784c361bbd56d865b3642baf0eb2994f = L.marker(
+                [-37.86928, 145.00084],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_268746510ffc6d97d7e22167acf9b252 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_784c361bbd56d865b3642baf0eb2994f.setIcon(icon_268746510ffc6d97d7e22167acf9b252);
+        
+    
+        var popup_f7509980cd3c971359fe5d645edcba57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f270b97889092fe6a118030bb763e38 = $(`<div id="html_8f270b97889092fe6a118030bb763e38" style="width: 100.0%; height: 100.0%;">School: beth rivkah ladies college<br>Median Study Score: 35.0</div>`)[0];
+                popup_f7509980cd3c971359fe5d645edcba57.setContent(html_8f270b97889092fe6a118030bb763e38);
+            
+        
+
+        marker_784c361bbd56d865b3642baf0eb2994f.bindPopup(popup_f7509980cd3c971359fe5d645edcba57)
+        ;
+
+        
+    
+    
+            var marker_c1ecb616dcff1f883dd1807750350d88 = L.marker(
+                [-37.83359, 144.97709],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_591c684fb986d388abd28feadb0b3bf1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c1ecb616dcff1f883dd1807750350d88.setIcon(icon_591c684fb986d388abd28feadb0b3bf1);
+        
+    
+        var popup_4e5c3a26622c695ed60bc1dc4c010510 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3784d3a4c6bb26aebd852733837809d2 = $(`<div id="html_3784d3a4c6bb26aebd852733837809d2" style="width: 100.0%; height: 100.0%;">School: melbourne grammar school<br>Median Study Score: 35.0</div>`)[0];
+                popup_4e5c3a26622c695ed60bc1dc4c010510.setContent(html_3784d3a4c6bb26aebd852733837809d2);
+            
+        
+
+        marker_c1ecb616dcff1f883dd1807750350d88.bindPopup(popup_4e5c3a26622c695ed60bc1dc4c010510)
+        ;
+
+        
+    
+    
+            var marker_3be862a9a85f8b819e86c04520f881a6 = L.marker(
+                [-37.55943, 149.7543],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_76a889db7986bb93a97f36dd18ebfc8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3be862a9a85f8b819e86c04520f881a6.setIcon(icon_76a889db7986bb93a97f36dd18ebfc8f);
+        
+    
+        var popup_1556fbaa46a56f1fb1e5d0d93056f4b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49ee47ccaf39fb671c741ebab32d01ec = $(`<div id="html_49ee47ccaf39fb671c741ebab32d01ec" style="width: 100.0%; height: 100.0%;">School: mallacoota p college<br>Median Study Score: 34.0</div>`)[0];
+                popup_1556fbaa46a56f1fb1e5d0d93056f4b6.setContent(html_49ee47ccaf39fb671c741ebab32d01ec);
+            
+        
+
+        marker_3be862a9a85f8b819e86c04520f881a6.bindPopup(popup_1556fbaa46a56f1fb1e5d0d93056f4b6)
+        ;
+
+        
+    
+    
+            var marker_c99e2a00304896879be2f82bcb0e7d0d = L.marker(
+                [-36.19294, 147.91076],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_fa6518e39581420f292150956c855772 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c99e2a00304896879be2f82bcb0e7d0d.setIcon(icon_fa6518e39581420f292150956c855772);
+        
+    
+        var popup_9f7b88f00e29c0b1f640123c56e9b15a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5cd591c35eaa6785c556cf94bb66dfa = $(`<div id="html_f5cd591c35eaa6785c556cf94bb66dfa" style="width: 100.0%; height: 100.0%;">School: corryong college<br>Median Study Score: 34.0</div>`)[0];
+                popup_9f7b88f00e29c0b1f640123c56e9b15a.setContent(html_f5cd591c35eaa6785c556cf94bb66dfa);
+            
+        
+
+        marker_c99e2a00304896879be2f82bcb0e7d0d.bindPopup(popup_9f7b88f00e29c0b1f640123c56e9b15a)
+        ;
+
+        
+    
+    
+            var marker_d7c0b1e5da744d6f762a44ca84cdb54f = L.marker(
+                [-37.89673, 144.99678],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_aea6f82f3263ab2a5a93a3b6da92af06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d7c0b1e5da744d6f762a44ca84cdb54f.setIcon(icon_aea6f82f3263ab2a5a93a3b6da92af06);
+        
+    
+        var popup_28544a347f2ac6e3893678cb8a19e4ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_434d1366112866de1fe4cbd986dba187 = $(`<div id="html_434d1366112866de1fe4cbd986dba187" style="width: 100.0%; height: 100.0%;">School: star of the sea college<br>Median Study Score: 34.0</div>`)[0];
+                popup_28544a347f2ac6e3893678cb8a19e4ce.setContent(html_434d1366112866de1fe4cbd986dba187);
+            
+        
+
+        marker_d7c0b1e5da744d6f762a44ca84cdb54f.bindPopup(popup_28544a347f2ac6e3893678cb8a19e4ce)
+        ;
+
+        
+    
+    
+            var marker_760110d96a3e1f17e0bc5cd3fa1ec071 = L.marker(
+                [-37.85232, 145.02509],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_6d34662f249c1dda66f8b32aa8a239de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_760110d96a3e1f17e0bc5cd3fa1ec071.setIcon(icon_6d34662f249c1dda66f8b32aa8a239de);
+        
+    
+        var popup_bea3886a916e608d799a42a7a0b3f559 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4724d195705a458918b04947eab37a71 = $(`<div id="html_4724d195705a458918b04947eab37a71" style="width: 100.0%; height: 100.0%;">School: lauriston girls school<br>Median Study Score: 34.0</div>`)[0];
+                popup_bea3886a916e608d799a42a7a0b3f559.setContent(html_4724d195705a458918b04947eab37a71);
+            
+        
+
+        marker_760110d96a3e1f17e0bc5cd3fa1ec071.bindPopup(popup_bea3886a916e608d799a42a7a0b3f559)
+        ;
+
+        
+    
+    
+            var marker_3ddfcca2551602e6e7393d22a13f88ed = L.marker(
+                [-37.83169, 144.9848],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_7fbf4b34c80153a9097b9f62b0312f21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3ddfcca2551602e6e7393d22a13f88ed.setIcon(icon_7fbf4b34c80153a9097b9f62b0312f21);
+        
+    
+        var popup_ed7081cd7ed9edd7200683110aff80d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92592370ccab7c3ae2cc6523e888a304 = $(`<div id="html_92592370ccab7c3ae2cc6523e888a304" style="width: 100.0%; height: 100.0%;">School: melbourne girls grammar<br>Median Study Score: 34.0</div>`)[0];
+                popup_ed7081cd7ed9edd7200683110aff80d8.setContent(html_92592370ccab7c3ae2cc6523e888a304);
+            
+        
+
+        marker_3ddfcca2551602e6e7393d22a13f88ed.bindPopup(popup_ed7081cd7ed9edd7200683110aff80d8)
+        ;
+
+        
+    
+    
+            var marker_ff4f7b860df7c0891496c3e8e5288597 = L.marker(
+                [-37.80897, 145.05578],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_72f201f72f559751d8d569b690a8b645 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ff4f7b860df7c0891496c3e8e5288597.setIcon(icon_72f201f72f559751d8d569b690a8b645);
+        
+    
+        var popup_82026921f27031d44508f1bc76e9cc75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4d11d9b4e93d41c025ccd63760c152c = $(`<div id="html_d4d11d9b4e93d41c025ccd63760c152c" style="width: 100.0%; height: 100.0%;">School: genazzano fcj college<br>Median Study Score: 34.0</div>`)[0];
+                popup_82026921f27031d44508f1bc76e9cc75.setContent(html_d4d11d9b4e93d41c025ccd63760c152c);
+            
+        
+
+        marker_ff4f7b860df7c0891496c3e8e5288597.bindPopup(popup_82026921f27031d44508f1bc76e9cc75)
+        ;
+
+        
+    
+    
+            var marker_5f9cb56d7aec7fb6453e08ebc6479ff7 = L.marker(
+                [-37.85955, 144.99155],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_06c9e4e4135a46dc18b8a87673fd60f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5f9cb56d7aec7fb6453e08ebc6479ff7.setIcon(icon_06c9e4e4135a46dc18b8a87673fd60f1);
+        
+    
+        var popup_481216fbc2a48783e702a22cde4b4962 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44ed4dbcc66db7c264507d5203aed8ff = $(`<div id="html_44ed4dbcc66db7c264507d5203aed8ff" style="width: 100.0%; height: 100.0%;">School: st michaels grammar school<br>Median Study Score: 34.0</div>`)[0];
+                popup_481216fbc2a48783e702a22cde4b4962.setContent(html_44ed4dbcc66db7c264507d5203aed8ff);
+            
+        
+
+        marker_5f9cb56d7aec7fb6453e08ebc6479ff7.bindPopup(popup_481216fbc2a48783e702a22cde4b4962)
+        ;
+
+        
+    
+    
+            var marker_c9d40eb08808b536d620cfcc8aa443c2 = L.marker(
+                [-37.90612, 144.99694],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_4fe6ed5b229c3d8d5d0e29db807ca5b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c9d40eb08808b536d620cfcc8aa443c2.setIcon(icon_4fe6ed5b229c3d8d5d0e29db807ca5b9);
+        
+    
+        var popup_f55be29d68a24ef1a04c5816afb8ef12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2949f4d77844bf969cdd7ce7ec4a8b6a = $(`<div id="html_2949f4d77844bf969cdd7ce7ec4a8b6a" style="width: 100.0%; height: 100.0%;">School: firbank grammar school<br>Median Study Score: 34.0</div>`)[0];
+                popup_f55be29d68a24ef1a04c5816afb8ef12.setContent(html_2949f4d77844bf969cdd7ce7ec4a8b6a);
+            
+        
+
+        marker_c9d40eb08808b536d620cfcc8aa443c2.bindPopup(popup_f55be29d68a24ef1a04c5816afb8ef12)
+        ;
+
+        
+    
+    
+            var marker_114ea1a8f37e7dd8055c812a8a5bf703 = L.marker(
+                [-37.83392, 145.03229],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_cdc95691cf87c5f3b6df09048fae9cbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_114ea1a8f37e7dd8055c812a8a5bf703.setIcon(icon_cdc95691cf87c5f3b6df09048fae9cbc);
+        
+    
+        var popup_6fcc107ddb243e70b7b9003bb111d4dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d97046d2cfa64a26a08889593735b8c5 = $(`<div id="html_d97046d2cfa64a26a08889593735b8c5" style="width: 100.0%; height: 100.0%;">School: scotch college<br>Median Study Score: 34.0</div>`)[0];
+                popup_6fcc107ddb243e70b7b9003bb111d4dd.setContent(html_d97046d2cfa64a26a08889593735b8c5);
+            
+        
+
+        marker_114ea1a8f37e7dd8055c812a8a5bf703.bindPopup(popup_6fcc107ddb243e70b7b9003bb111d4dd)
+        ;
+
+        
+    
+    
+            var marker_adf46c09ad4e35b893d5f305415dce85 = L.marker(
+                [-38.17226, 145.09346],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_ae82f1f6fce4f63c241f4c976f40aecb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_adf46c09ad4e35b893d5f305415dce85.setIcon(icon_ae82f1f6fce4f63c241f4c976f40aecb);
+        
+    
+        var popup_14c8df59cc8ecff93f97d2b675dd64d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27d82403c7018a3576f3c82bead7ee31 = $(`<div id="html_27d82403c7018a3576f3c82bead7ee31" style="width: 100.0%; height: 100.0%;">School: toorak college<br>Median Study Score: 34.0</div>`)[0];
+                popup_14c8df59cc8ecff93f97d2b675dd64d6.setContent(html_27d82403c7018a3576f3c82bead7ee31);
+            
+        
+
+        marker_adf46c09ad4e35b893d5f305415dce85.bindPopup(popup_14c8df59cc8ecff93f97d2b675dd64d6)
+        ;
+
+        
+    
+    
+            var marker_41df32caa6b66be5687edb9709b48288 = L.marker(
+                [-37.87791, 145.01132],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_64de4a02838d6b976ffa9400daed662b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_41df32caa6b66be5687edb9709b48288.setIcon(icon_64de4a02838d6b976ffa9400daed662b);
+        
+    
+        var popup_aa9a86ee9547540c467ec0451d4ae9b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35eeff41dce0d5d128c4ab904e6c76b6 = $(`<div id="html_35eeff41dce0d5d128c4ab904e6c76b6" style="width: 100.0%; height: 100.0%;">School: shelford girls grammar<br>Median Study Score: 34.0</div>`)[0];
+                popup_aa9a86ee9547540c467ec0451d4ae9b3.setContent(html_35eeff41dce0d5d128c4ab904e6c76b6);
+            
+        
+
+        marker_41df32caa6b66be5687edb9709b48288.bindPopup(popup_aa9a86ee9547540c467ec0451d4ae9b3)
+        ;
+
+        
+    
+    
+            var marker_cbea05a9e10cd37c68f3e3ad71ff2126 = L.marker(
+                [-37.76527, 145.04672],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_b55f1fee3b8fdcba1d23f260635d367d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cbea05a9e10cd37c68f3e3ad71ff2126.setIcon(icon_b55f1fee3b8fdcba1d23f260635d367d);
+        
+    
+        var popup_b0b9660ea3df9d7456886904f83e9d07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e72f0b9d4b0ede58076564ebd29306ca = $(`<div id="html_e72f0b9d4b0ede58076564ebd29306ca" style="width: 100.0%; height: 100.0%;">School: ivanhoe girls grammar school<br>Median Study Score: 34.0</div>`)[0];
+                popup_b0b9660ea3df9d7456886904f83e9d07.setContent(html_e72f0b9d4b0ede58076564ebd29306ca);
+            
+        
+
+        marker_cbea05a9e10cd37c68f3e3ad71ff2126.bindPopup(popup_b0b9660ea3df9d7456886904f83e9d07)
+        ;
+
+        
+    
+    
+            var marker_2467a5bf69ca42337bacc396387ca943 = L.marker(
+                [-37.86812, 145.00034],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_c06ef3ad32f14f0f63024fbd06c91d08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2467a5bf69ca42337bacc396387ca943.setIcon(icon_c06ef3ad32f14f0f63024fbd06c91d08);
+        
+    
+        var popup_a365cef09a93783d87244f644648675c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a932010ada0d662d837b46be0923a2f = $(`<div id="html_1a932010ada0d662d837b46be0923a2f" style="width: 100.0%; height: 100.0%;">School: yeshivah college<br>Median Study Score: 34.0</div>`)[0];
+                popup_a365cef09a93783d87244f644648675c.setContent(html_1a932010ada0d662d837b46be0923a2f);
+            
+        
+
+        marker_2467a5bf69ca42337bacc396387ca943.bindPopup(popup_a365cef09a93783d87244f644648675c)
+        ;
+
+        
+    
+    
+            var marker_86431989579f79709c6cf2fec539dedd = L.marker(
+                [-37.4457, 144.53319],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_ec6e8bfd29d0cdbb5729761af8d0c88a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_86431989579f79709c6cf2fec539dedd.setIcon(icon_ec6e8bfd29d0cdbb5729761af8d0c88a);
+        
+    
+        var popup_dd148cce1a617117adb47dd47551be44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb127200b0dc7a84beb6d0a34965db17 = $(`<div id="html_bb127200b0dc7a84beb6d0a34965db17" style="width: 100.0%; height: 100.0%;">School: alice miller school<br>Median Study Score: 34.0</div>`)[0];
+                popup_dd148cce1a617117adb47dd47551be44.setContent(html_bb127200b0dc7a84beb6d0a34965db17);
+            
+        
+
+        marker_86431989579f79709c6cf2fec539dedd.bindPopup(popup_dd148cce1a617117adb47dd47551be44)
+        ;
+
+        
+    
+    
+            var marker_81950d30d49cbdeb551156cdb5e60604 = L.marker(
+                [-37.77826, 144.84754],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_da052c845ea8d7f305ad140299e0c700 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_81950d30d49cbdeb551156cdb5e60604.setIcon(icon_da052c845ea8d7f305ad140299e0c700);
+        
+    
+        var popup_535a3a6073f4cf38294c4b19a27ab688 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18a86ed2b457c89696fa7774acaade39 = $(`<div id="html_18a86ed2b457c89696fa7774acaade39" style="width: 100.0%; height: 100.0%;">School: braybrook college<br>Median Study Score: 33.0</div>`)[0];
+                popup_535a3a6073f4cf38294c4b19a27ab688.setContent(html_18a86ed2b457c89696fa7774acaade39);
+            
+        
+
+        marker_81950d30d49cbdeb551156cdb5e60604.bindPopup(popup_535a3a6073f4cf38294c4b19a27ab688)
+        ;
+
+        
+    
+    
+            var marker_5a49209c13cf96a97d0bdd4b5931acab = L.marker(
+                [-37.9122, 145.04854],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_a325032a41232bae7b4ed206e6f6044e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5a49209c13cf96a97d0bdd4b5931acab.setIcon(icon_a325032a41232bae7b4ed206e6f6044e);
+        
+    
+        var popup_28e483af516bc83da9ac2f9e3774104c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d5d15c7e599734fa9720a331a99fdfe = $(`<div id="html_3d5d15c7e599734fa9720a331a99fdfe" style="width: 100.0%; height: 100.0%;">School: mckinnon secondary college<br>Median Study Score: 33.0</div>`)[0];
+                popup_28e483af516bc83da9ac2f9e3774104c.setContent(html_3d5d15c7e599734fa9720a331a99fdfe);
+            
+        
+
+        marker_5a49209c13cf96a97d0bdd4b5931acab.bindPopup(popup_28e483af516bc83da9ac2f9e3774104c)
+        ;
+
+        
+    
+    
+            var marker_78f608e73e548051ba84b348165b409b = L.marker(
+                [-35.06457, 142.32261],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_0c318213f33c70d63b1c32c0ada5a0cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78f608e73e548051ba84b348165b409b.setIcon(icon_0c318213f33c70d63b1c32c0ada5a0cf);
+        
+    
+        var popup_3daa1f76f38ffac61c4392f1cf9dd1cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b7f3d7dfde923d97445052348cb96d3 = $(`<div id="html_8b7f3d7dfde923d97445052348cb96d3" style="width: 100.0%; height: 100.0%;">School: ouyen p college<br>Median Study Score: 33.0</div>`)[0];
+                popup_3daa1f76f38ffac61c4392f1cf9dd1cb.setContent(html_8b7f3d7dfde923d97445052348cb96d3);
+            
+        
+
+        marker_78f608e73e548051ba84b348165b409b.bindPopup(popup_3daa1f76f38ffac61c4392f1cf9dd1cb)
+        ;
+
+        
+    
+    
+            var marker_db0b04e8a785e78352431975a43b23d4 = L.marker(
+                [-37.82251, 145.01433],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_8ba5a247ddcde5ab96c389b7877b3765 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_db0b04e8a785e78352431975a43b23d4.setIcon(icon_8ba5a247ddcde5ab96c389b7877b3765);
+        
+    
+        var popup_b9807361041f5c60ed7ac18b2ace3a2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be040b443d1f22b5fad91e742e063750 = $(`<div id="html_be040b443d1f22b5fad91e742e063750" style="width: 100.0%; height: 100.0%;">School: melbourne girls college<br>Median Study Score: 33.0</div>`)[0];
+                popup_b9807361041f5c60ed7ac18b2ace3a2f.setContent(html_be040b443d1f22b5fad91e742e063750);
+            
+        
+
+        marker_db0b04e8a785e78352431975a43b23d4.bindPopup(popup_b9807361041f5c60ed7ac18b2ace3a2f)
+        ;
+
+        
+    
+    
+            var marker_adf817b5ea25eebaf934510af5088a95 = L.marker(
+                [-37.87738, 145.00489],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_228f61d3512dc1b19c43fdbd8c0139dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_adf817b5ea25eebaf934510af5088a95.setIcon(icon_228f61d3512dc1b19c43fdbd8c0139dc);
+        
+    
+        var popup_495b94125a64bade0b78ceac7123e182 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9130bc56cda69ddcca49c9bb5ed0cce = $(`<div id="html_e9130bc56cda69ddcca49c9bb5ed0cce" style="width: 100.0%; height: 100.0%;">School: caulfield grammar school<br>Median Study Score: 33.0</div>`)[0];
+                popup_495b94125a64bade0b78ceac7123e182.setContent(html_e9130bc56cda69ddcca49c9bb5ed0cce);
+            
+        
+
+        marker_adf817b5ea25eebaf934510af5088a95.bindPopup(popup_495b94125a64bade0b78ceac7123e182)
+        ;
+
+        
+    
+    
+            var marker_dd0b9089440d2f94c3ed35b3df9ec7e3 = L.marker(
+                [-37.87738, 145.00489],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_86301fb57fa9b3dc5bf30f40065e9dd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dd0b9089440d2f94c3ed35b3df9ec7e3.setIcon(icon_86301fb57fa9b3dc5bf30f40065e9dd2);
+        
+    
+        var popup_e906e598c4539e5152c7f9beacdd303c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7d92a1d6d8d2aa949c0d75abe54404e = $(`<div id="html_b7d92a1d6d8d2aa949c0d75abe54404e" style="width: 100.0%; height: 100.0%;">School: caulfield grammar school<br>Median Study Score: 33.0</div>`)[0];
+                popup_e906e598c4539e5152c7f9beacdd303c.setContent(html_b7d92a1d6d8d2aa949c0d75abe54404e);
+            
+        
+
+        marker_dd0b9089440d2f94c3ed35b3df9ec7e3.bindPopup(popup_e906e598c4539e5152c7f9beacdd303c)
+        ;
+
+        
+    
+    
+            var marker_a127cc543387c82876a8131ec618e010 = L.marker(
+                [-37.81395, 145.03849],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_21c5179cca75e05431fa964e964efd78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a127cc543387c82876a8131ec618e010.setIcon(icon_21c5179cca75e05431fa964e964efd78);
+        
+    
+        var popup_7a1252a734a803a56092cbd1aa59d37f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ba9fe075f8bba88ba057f948a506077 = $(`<div id="html_0ba9fe075f8bba88ba057f948a506077" style="width: 100.0%; height: 100.0%;">School: methodist ladies college<br>Median Study Score: 33.0</div>`)[0];
+                popup_7a1252a734a803a56092cbd1aa59d37f.setContent(html_0ba9fe075f8bba88ba057f948a506077);
+            
+        
+
+        marker_a127cc543387c82876a8131ec618e010.bindPopup(popup_7a1252a734a803a56092cbd1aa59d37f)
+        ;
+
+        
+    
+    
+            var marker_1df31c8e2ef573b1fcee0f37f4206447 = L.marker(
+                [-37.81386, 145.0311],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_20fc26ac36d6eebcd94d326fc006e815 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1df31c8e2ef573b1fcee0f37f4206447.setIcon(icon_20fc26ac36d6eebcd94d326fc006e815);
+        
+    
+        var popup_8f369c62cd7dbc120fb2b701047e03ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9304099fe692a110c41b9601ef0fb602 = $(`<div id="html_9304099fe692a110c41b9601ef0fb602" style="width: 100.0%; height: 100.0%;">School: xavier college<br>Median Study Score: 33.0</div>`)[0];
+                popup_8f369c62cd7dbc120fb2b701047e03ea.setContent(html_9304099fe692a110c41b9601ef0fb602);
+            
+        
+
+        marker_1df31c8e2ef573b1fcee0f37f4206447.bindPopup(popup_8f369c62cd7dbc120fb2b701047e03ea)
+        ;
+
+        
+    
+    
+            var marker_79533b4fcfdff744227cd5da5f544e94 = L.marker(
+                [-38.15242, 144.34009],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_5b4247d4095781138b81103b245e3b1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_79533b4fcfdff744227cd5da5f544e94.setIcon(icon_5b4247d4095781138b81103b245e3b1e);
+        
+    
+        var popup_ad92de843724aebc64e93bb702e80e0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d48204ec828a544271896f289539150 = $(`<div id="html_2d48204ec828a544271896f289539150" style="width: 100.0%; height: 100.0%;">School: the geelong college<br>Median Study Score: 33.0</div>`)[0];
+                popup_ad92de843724aebc64e93bb702e80e0f.setContent(html_2d48204ec828a544271896f289539150);
+            
+        
+
+        marker_79533b4fcfdff744227cd5da5f544e94.bindPopup(popup_ad92de843724aebc64e93bb702e80e0f)
+        ;
+
+        
+    
+    
+            var marker_630ac888e7c25ed9ae7a3e85bb123593 = L.marker(
+                [-37.77252, 145.04448],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_9c3efd50865a3ab092a47c3c6ce313a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_630ac888e7c25ed9ae7a3e85bb123593.setIcon(icon_9c3efd50865a3ab092a47c3c6ce313a5);
+        
+    
+        var popup_23e64af869bc10e40685115729a05767 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3be0ded52543a7ac5a68d4469dd9d358 = $(`<div id="html_3be0ded52543a7ac5a68d4469dd9d358" style="width: 100.0%; height: 100.0%;">School: ivanhoe grammar school<br>Median Study Score: 33.0</div>`)[0];
+                popup_23e64af869bc10e40685115729a05767.setContent(html_3be0ded52543a7ac5a68d4469dd9d358);
+            
+        
+
+        marker_630ac888e7c25ed9ae7a3e85bb123593.bindPopup(popup_23e64af869bc10e40685115729a05767)
+        ;
+
+        
+    
+    
+            var marker_941c170ae1f28ae4da51f5537cf75804 = L.marker(
+                [-37.77252, 145.04448],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_6d4107a251cada97f0edbb2c2b9f56bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_941c170ae1f28ae4da51f5537cf75804.setIcon(icon_6d4107a251cada97f0edbb2c2b9f56bc);
+        
+    
+        var popup_95f710cb52674116e7697177a3cb5a17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3dbfd20c293818e2f2764805430d5b06 = $(`<div id="html_3dbfd20c293818e2f2764805430d5b06" style="width: 100.0%; height: 100.0%;">School: ivanhoe grammar school<br>Median Study Score: 33.0</div>`)[0];
+                popup_95f710cb52674116e7697177a3cb5a17.setContent(html_3dbfd20c293818e2f2764805430d5b06);
+            
+        
+
+        marker_941c170ae1f28ae4da51f5537cf75804.bindPopup(popup_95f710cb52674116e7697177a3cb5a17)
+        ;
+
+        
+    
+    
+            var marker_493aaecb766c256f584cee000d87f221 = L.marker(
+                [-37.81552, 145.25669],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_42c413171d7f98df40238f44e932f966 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_493aaecb766c256f584cee000d87f221.setIcon(icon_42c413171d7f98df40238f44e932f966);
+        
+    
+        var popup_b2f0c456f82a3d730fd83383d8c1eca5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d39651bd8ea809c5466dc0c9afcd2b20 = $(`<div id="html_d39651bd8ea809c5466dc0c9afcd2b20" style="width: 100.0%; height: 100.0%;">School: tintern grammar<br>Median Study Score: 33.0</div>`)[0];
+                popup_b2f0c456f82a3d730fd83383d8c1eca5.setContent(html_d39651bd8ea809c5466dc0c9afcd2b20);
+            
+        
+
+        marker_493aaecb766c256f584cee000d87f221.bindPopup(popup_b2f0c456f82a3d730fd83383d8c1eca5)
+        ;
+
+        
+    
+    
+            var marker_68f715d016f55b63daddf6ef768d31e6 = L.marker(
+                [-37.81478, 145.04782],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_91a796e3659328721f94a39928198dd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_68f715d016f55b63daddf6ef768d31e6.setIcon(icon_91a796e3659328721f94a39928198dd9);
+        
+    
+        var popup_6bc6048e00a3e1e84db5fdc423d4ea6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89176d5ee6b18dfd31b0167652247dc5 = $(`<div id="html_89176d5ee6b18dfd31b0167652247dc5" style="width: 100.0%; height: 100.0%;">School: carey baptist grammar school<br>Median Study Score: 33.0</div>`)[0];
+                popup_6bc6048e00a3e1e84db5fdc423d4ea6b.setContent(html_89176d5ee6b18dfd31b0167652247dc5);
+            
+        
+
+        marker_68f715d016f55b63daddf6ef768d31e6.bindPopup(popup_6bc6048e00a3e1e84db5fdc423d4ea6b)
+        ;
+
+        
+    
+    
+            var marker_84f05ec1f85e892a987cb3ea8b318c30 = L.marker(
+                [-37.89952, 145.04122],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_6d07de4c61c15d4257f0e99ba11b9d00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_84f05ec1f85e892a987cb3ea8b318c30.setIcon(icon_6d07de4c61c15d4257f0e99ba11b9d00);
+        
+    
+        var popup_2b41115b3b8b101abaa5aa844d424585 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7e4412e3eeebd906178e0fee63106fb = $(`<div id="html_b7e4412e3eeebd906178e0fee63106fb" style="width: 100.0%; height: 100.0%;">School: kilvington grammar school<br>Median Study Score: 33.0</div>`)[0];
+                popup_2b41115b3b8b101abaa5aa844d424585.setContent(html_b7e4412e3eeebd906178e0fee63106fb);
+            
+        
+
+        marker_84f05ec1f85e892a987cb3ea8b318c30.bindPopup(popup_2b41115b3b8b101abaa5aa844d424585)
+        ;
+
+        
+    
+    
+            var marker_297cb41d25bc39ce62b8e5d070d20b1f = L.marker(
+                [-37.81835, 145.12992],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_8b7d241706bf30d77454fbba2ae7c157 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_297cb41d25bc39ce62b8e5d070d20b1f.setIcon(icon_8b7d241706bf30d77454fbba2ae7c157);
+        
+    
+        var popup_cbf0a5b0a379d8de9081887f912d85a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d1dd9b13d18b9c1a46e23fc344e837f = $(`<div id="html_6d1dd9b13d18b9c1a46e23fc344e837f" style="width: 100.0%; height: 100.0%;">School: our lady of sion college<br>Median Study Score: 33.0</div>`)[0];
+                popup_cbf0a5b0a379d8de9081887f912d85a5.setContent(html_6d1dd9b13d18b9c1a46e23fc344e837f);
+            
+        
+
+        marker_297cb41d25bc39ce62b8e5d070d20b1f.bindPopup(popup_cbf0a5b0a379d8de9081887f912d85a5)
+        ;
+
+        
+    
+    
+            var marker_ae319355eb083a6a2b186b204a82e8a7 = L.marker(
+                [-37.88014, 145.2153],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_e1a69074c1f04a68bfa82dccb45ba10c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae319355eb083a6a2b186b204a82e8a7.setIcon(icon_e1a69074c1f04a68bfa82dccb45ba10c);
+        
+    
+        var popup_369e404586142f719db395beab66cf99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02cf39fbc05473ece3fcbf631a5f10b3 = $(`<div id="html_02cf39fbc05473ece3fcbf631a5f10b3" style="width: 100.0%; height: 100.0%;">School: waverley christian college<br>Median Study Score: 33.0</div>`)[0];
+                popup_369e404586142f719db395beab66cf99.setContent(html_02cf39fbc05473ece3fcbf631a5f10b3);
+            
+        
+
+        marker_ae319355eb083a6a2b186b204a82e8a7.bindPopup(popup_369e404586142f719db395beab66cf99)
+        ;
+
+        
+    
+    
+            var marker_3e473743159860c7ee51c65c2aae934a = L.marker(
+                [-37.85084, 144.7249],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_98ce224db541b3992dc5af23ba5ccfd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3e473743159860c7ee51c65c2aae934a.setIcon(icon_98ce224db541b3992dc5af23ba5ccfd4);
+        
+    
+        var popup_248c183d2c1bfc0a593e5095bd0ea2a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93f9a43f57d313967345b6b3fd49ccd3 = $(`<div id="html_93f9a43f57d313967345b6b3fd49ccd3" style="width: 100.0%; height: 100.0%;">School: westbourne grammar school<br>Median Study Score: 33.0</div>`)[0];
+                popup_248c183d2c1bfc0a593e5095bd0ea2a0.setContent(html_93f9a43f57d313967345b6b3fd49ccd3);
+            
+        
+
+        marker_3e473743159860c7ee51c65c2aae934a.bindPopup(popup_248c183d2c1bfc0a593e5095bd0ea2a0)
+        ;
+
+        
+    
+    
+            var marker_6df089202a15851a26370037088454c6 = L.marker(
+                [-37.76357, 145.30513],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_d9c839aad2f29118c1ab69d7fb372859 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6df089202a15851a26370037088454c6.setIcon(icon_d9c839aad2f29118c1ab69d7fb372859);
+        
+    
+        var popup_652491473b7ce7d680b91684b6c54c1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_baaaae2535fc528a790f8e083ba24432 = $(`<div id="html_baaaae2535fc528a790f8e083ba24432" style="width: 100.0%; height: 100.0%;">School: oxley christian college<br>Median Study Score: 33.0</div>`)[0];
+                popup_652491473b7ce7d680b91684b6c54c1c.setContent(html_baaaae2535fc528a790f8e083ba24432);
+            
+        
+
+        marker_6df089202a15851a26370037088454c6.bindPopup(popup_652491473b7ce7d680b91684b6c54c1c)
+        ;
+
+        
+    
+    
+            var marker_3d87d66049a94f4f9a158b03501e607b = L.marker(
+                [-37.78785, 145.33887],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_7445703661f00e7ef9cf3d6464cfda6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d87d66049a94f4f9a158b03501e607b.setIcon(icon_7445703661f00e7ef9cf3d6464cfda6c);
+        
+    
+        var popup_8ad146631e396b07d5c269c77282d9dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_100ec1db3a80aa856f74d045d168b9eb = $(`<div id="html_100ec1db3a80aa856f74d045d168b9eb" style="width: 100.0%; height: 100.0%;">School: billanook college<br>Median Study Score: 33.0</div>`)[0];
+                popup_8ad146631e396b07d5c269c77282d9dc.setContent(html_100ec1db3a80aa856f74d045d168b9eb);
+            
+        
+
+        marker_3d87d66049a94f4f9a158b03501e607b.bindPopup(popup_8ad146631e396b07d5c269c77282d9dc)
+        ;
+
+        
+    
+    
+            var marker_39b8a72dde836c8d4e152e4ac6b801de = L.marker(
+                [-37.86547, 145.2192],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_de901ec0d2639eefe205791af1f2d530 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_39b8a72dde836c8d4e152e4ac6b801de.setIcon(icon_de901ec0d2639eefe205791af1f2d530);
+        
+    
+        var popup_9d25b1b459fb393d127e4cde92cad1e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e4edaab840270510ab7e6c59b1dce67 = $(`<div id="html_1e4edaab840270510ab7e6c59b1dce67" style="width: 100.0%; height: 100.0%;">School: the knox school<br>Median Study Score: 33.0</div>`)[0];
+                popup_9d25b1b459fb393d127e4cde92cad1e3.setContent(html_1e4edaab840270510ab7e6c59b1dce67);
+            
+        
+
+        marker_39b8a72dde836c8d4e152e4ac6b801de.bindPopup(popup_9d25b1b459fb393d127e4cde92cad1e3)
+        ;
+
+        
+    
+    
+            var marker_e5c234edcc565bfa7cfdc272257d30a2 = L.marker(
+                [-37.78043, 145.03617],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_d5062be9cdf706ff2f521e69127d62dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e5c234edcc565bfa7cfdc272257d30a2.setIcon(icon_d5062be9cdf706ff2f521e69127d62dd);
+        
+    
+        var popup_7778b31d9869ae17b647399545ce2601 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30f8e6132380bec5a257341260ec7671 = $(`<div id="html_30f8e6132380bec5a257341260ec7671" style="width: 100.0%; height: 100.0%;">School: alphington grammar school<br>Median Study Score: 33.0</div>`)[0];
+                popup_7778b31d9869ae17b647399545ce2601.setContent(html_30f8e6132380bec5a257341260ec7671);
+            
+        
+
+        marker_e5c234edcc565bfa7cfdc272257d30a2.bindPopup(popup_7778b31d9869ae17b647399545ce2601)
+        ;
+
+        
+    
+    
+            var marker_33788509dab5697e11d141baf054f5a1 = L.marker(
+                [-36.76197, 144.27088],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_98276ccb18adea6f31d5a6c849d90b8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_33788509dab5697e11d141baf054f5a1.setIcon(icon_98276ccb18adea6f31d5a6c849d90b8c);
+        
+    
+        var popup_525ed34fd1ffda9df2f241ba6bdafbf3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34557a8a01e7a6efee79f6978913ed70 = $(`<div id="html_34557a8a01e7a6efee79f6978913ed70" style="width: 100.0%; height: 100.0%;">School: girton grammar school<br>Median Study Score: 33.0</div>`)[0];
+                popup_525ed34fd1ffda9df2f241ba6bdafbf3.setContent(html_34557a8a01e7a6efee79f6978913ed70);
+            
+        
+
+        marker_33788509dab5697e11d141baf054f5a1.bindPopup(popup_525ed34fd1ffda9df2f241ba6bdafbf3)
+        ;
+
+        
+    
+    
+            var marker_910771423ae32182127d030b8639590b = L.marker(
+                [-38.34264, 145.01358],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_44263ae220ba55f68272966404cd0225 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_910771423ae32182127d030b8639590b.setIcon(icon_44263ae220ba55f68272966404cd0225);
+        
+    
+        var popup_56ef3227ac0fe6d81537c58314d95a7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d56f6d4d0dbd94a04123d5e4a8416a47 = $(`<div id="html_d56f6d4d0dbd94a04123d5e4a8416a47" style="width: 100.0%; height: 100.0%;">School: dromana secondary college<br>Median Study Score: 32.0</div>`)[0];
+                popup_56ef3227ac0fe6d81537c58314d95a7f.setContent(html_d56f6d4d0dbd94a04123d5e4a8416a47);
+            
+        
+
+        marker_910771423ae32182127d030b8639590b.bindPopup(popup_56ef3227ac0fe6d81537c58314d95a7f)
+        ;
+
+        
+    
+    
+            var marker_78c11ae72cf369f9cb95fe6650dc34ac = L.marker(
+                [-37.79786, 145.07677],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_e797da871b827c669c2f60bd7e6062d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78c11ae72cf369f9cb95fe6650dc34ac.setIcon(icon_e797da871b827c669c2f60bd7e6062d0);
+        
+    
+        var popup_86005a29313326c22e0fbc485d30ee98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2d7f457ec079c59163f844ced3f4709 = $(`<div id="html_a2d7f457ec079c59163f844ced3f4709" style="width: 100.0%; height: 100.0%;">School: balwyn high school<br>Median Study Score: 32.0</div>`)[0];
+                popup_86005a29313326c22e0fbc485d30ee98.setContent(html_a2d7f457ec079c59163f844ced3f4709);
+            
+        
+
+        marker_78c11ae72cf369f9cb95fe6650dc34ac.bindPopup(popup_86005a29313326c22e0fbc485d30ee98)
+        ;
+
+        
+    
+    
+            var marker_3c682286d679ae09431f04921129b217 = L.marker(
+                [-38.16219, 145.12895],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_5e097368b8951c52e21868a9af5b7c0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c682286d679ae09431f04921129b217.setIcon(icon_5e097368b8951c52e21868a9af5b7c0e);
+        
+    
+        var popup_5dc56f62eb0fd3f990a0094b479c45c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db5767bbb31d0569bdc403e9c235528a = $(`<div id="html_db5767bbb31d0569bdc403e9c235528a" style="width: 100.0%; height: 100.0%;">School: frankston high school<br>Median Study Score: 32.0</div>`)[0];
+                popup_5dc56f62eb0fd3f990a0094b479c45c2.setContent(html_db5767bbb31d0569bdc403e9c235528a);
+            
+        
+
+        marker_3c682286d679ae09431f04921129b217.bindPopup(popup_5dc56f62eb0fd3f990a0094b479c45c2)
+        ;
+
+        
+    
+    
+            var marker_dbd6d809cb06e832832738f261785ea7 = L.marker(
+                [-37.80219, 145.11756],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_f3346373db3c7cd33e8e7bddc3f35c41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dbd6d809cb06e832832738f261785ea7.setIcon(icon_f3346373db3c7cd33e8e7bddc3f35c41);
+        
+    
+        var popup_a8cdee15cbef33606be695867df1c17e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd2c7c9d945bd4447f2cea51b92be453 = $(`<div id="html_cd2c7c9d945bd4447f2cea51b92be453" style="width: 100.0%; height: 100.0%;">School: koonung secondary college<br>Median Study Score: 32.0</div>`)[0];
+                popup_a8cdee15cbef33606be695867df1c17e.setContent(html_cd2c7c9d945bd4447f2cea51b92be453);
+            
+        
+
+        marker_dbd6d809cb06e832832738f261785ea7.bindPopup(popup_a8cdee15cbef33606be695867df1c17e)
+        ;
+
+        
+    
+    
+            var marker_0a957470b8c69f667bc7c18842871233 = L.marker(
+                [-37.85175, 144.99116],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_defddaf562a97b9d27568bf280e000c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a957470b8c69f667bc7c18842871233.setIcon(icon_defddaf562a97b9d27568bf280e000c6);
+        
+    
+        var popup_4d37868f76a0b5410791a3af0cbf6bc3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5199d51875b6fb9beb37959788e3afb3 = $(`<div id="html_5199d51875b6fb9beb37959788e3afb3" style="width: 100.0%; height: 100.0%;">School: prahran high school<br>Median Study Score: 32.0</div>`)[0];
+                popup_4d37868f76a0b5410791a3af0cbf6bc3.setContent(html_5199d51875b6fb9beb37959788e3afb3);
+            
+        
+
+        marker_0a957470b8c69f667bc7c18842871233.bindPopup(popup_4d37868f76a0b5410791a3af0cbf6bc3)
+        ;
+
+        
+    
+    
+            var marker_397f836e432f6c7a257bf75007e8bd1f = L.marker(
+                [-37.74169, 145.0064],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_dda364f87300532ee10b12ba59f2a436 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_397f836e432f6c7a257bf75007e8bd1f.setIcon(icon_dda364f87300532ee10b12ba59f2a436);
+        
+    
+        var popup_95df05778c7dddd04633993465ca4964 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_138bc942488ce2038e87c98b6d8ded7a = $(`<div id="html_138bc942488ce2038e87c98b6d8ded7a" style="width: 100.0%; height: 100.0%;">School: preston high school<br>Median Study Score: 32.0</div>`)[0];
+                popup_95df05778c7dddd04633993465ca4964.setContent(html_138bc942488ce2038e87c98b6d8ded7a);
+            
+        
+
+        marker_397f836e432f6c7a257bf75007e8bd1f.bindPopup(popup_95df05778c7dddd04633993465ca4964)
+        ;
+
+        
+    
+    
+            var marker_6a557b94913f3b7a4900f9b3f3d4cc4d = L.marker(
+                [-37.84412, 145.1997],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_3468d26637861d2ca9ece186f833f2f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6a557b94913f3b7a4900f9b3f3d4cc4d.setIcon(icon_3468d26637861d2ca9ece186f833f2f6);
+        
+    
+        var popup_fa30dc0438781577818807f590feae0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_131e653701047f322cd8cd97787e0798 = $(`<div id="html_131e653701047f322cd8cd97787e0798" style="width: 100.0%; height: 100.0%;">School: vermont secondary college<br>Median Study Score: 32.0</div>`)[0];
+                popup_fa30dc0438781577818807f590feae0f.setContent(html_131e653701047f322cd8cd97787e0798);
+            
+        
+
+        marker_6a557b94913f3b7a4900f9b3f3d4cc4d.bindPopup(popup_fa30dc0438781577818807f590feae0f)
+        ;
+
+        
+    
+    
+            var marker_97b6c654bb973b3fcb7f1b5fc4f28977 = L.marker(
+                [-37.86286, 144.89502],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_2ac92f6a5d51957b6fcb8fe8dd3a5433 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_97b6c654bb973b3fcb7f1b5fc4f28977.setIcon(icon_2ac92f6a5d51957b6fcb8fe8dd3a5433);
+        
+    
+        var popup_73ec2e83f7e2eb0310945146eb7bc3ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba903fb00b71b5d801ef18421680c414 = $(`<div id="html_ba903fb00b71b5d801ef18421680c414" style="width: 100.0%; height: 100.0%;">School: williamstown high school<br>Median Study Score: 32.0</div>`)[0];
+                popup_73ec2e83f7e2eb0310945146eb7bc3ff.setContent(html_ba903fb00b71b5d801ef18421680c414);
+            
+        
+
+        marker_97b6c654bb973b3fcb7f1b5fc4f28977.bindPopup(popup_73ec2e83f7e2eb0310945146eb7bc3ff)
+        ;
+
+        
+    
+    
+            var marker_d2accfe21217662c231947486de57f5f = L.marker(
+                [-37.8857, 145.03801],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_4eefc23d815f32f4f6d45b5a06b925ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d2accfe21217662c231947486de57f5f.setIcon(icon_4eefc23d815f32f4f6d45b5a06b925ff);
+        
+    
+        var popup_1527d4b7e4b637810f863c70c8addbbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6be82c9ee5ce986740f6141a9fc4f748 = $(`<div id="html_6be82c9ee5ce986740f6141a9fc4f748" style="width: 100.0%; height: 100.0%;">School: glen eira college<br>Median Study Score: 32.0</div>`)[0];
+                popup_1527d4b7e4b637810f863c70c8addbbe.setContent(html_6be82c9ee5ce986740f6141a9fc4f748);
+            
+        
+
+        marker_d2accfe21217662c231947486de57f5f.bindPopup(popup_1527d4b7e4b637810f863c70c8addbbe)
+        ;
+
+        
+    
+    
+            var marker_0b9f1a437d0c79f89bddff54b1636815 = L.marker(
+                [-37.86453, 145.10333],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_41d4c95260c0489588799b74c407e02a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b9f1a437d0c79f89bddff54b1636815.setIcon(icon_41d4c95260c0489588799b74c407e02a);
+        
+    
+        var popup_a97da61f10b5e4f6cbf956c2dec1436d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3966355a064c85833975a29e71de2f8 = $(`<div id="html_a3966355a064c85833975a29e71de2f8" style="width: 100.0%; height: 100.0%;">School: ashwood high school<br>Median Study Score: 32.0</div>`)[0];
+                popup_a97da61f10b5e4f6cbf956c2dec1436d.setContent(html_a3966355a064c85833975a29e71de2f8);
+            
+        
+
+        marker_0b9f1a437d0c79f89bddff54b1636815.bindPopup(popup_a97da61f10b5e4f6cbf956c2dec1436d)
+        ;
+
+        
+    
+    
+            var marker_9ba774155646c028055c13d0283a67f5 = L.marker(
+                [-38.06882, 144.39907],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_2b254273f68e72c82f66ff179b508425 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ba774155646c028055c13d0283a67f5.setIcon(icon_2b254273f68e72c82f66ff179b508425);
+        
+    
+        var popup_7567a8f38fb6492a4038a8caa46d0c97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfd4838569d64f09ca30d00c3ddd3bac = $(`<div id="html_cfd4838569d64f09ca30d00c3ddd3bac" style="width: 100.0%; height: 100.0%;">School: geelong grammar school<br>Median Study Score: 32.0</div>`)[0];
+                popup_7567a8f38fb6492a4038a8caa46d0c97.setContent(html_cfd4838569d64f09ca30d00c3ddd3bac);
+            
+        
+
+        marker_9ba774155646c028055c13d0283a67f5.bindPopup(popup_7567a8f38fb6492a4038a8caa46d0c97)
+        ;
+
+        
+    
+    
+            var marker_a81ddfbb51c804c849c9ca238df117d9 = L.marker(
+                [-36.11815, 144.74337],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_ed43c9d800d4fd1e42df0aba60305e32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a81ddfbb51c804c849c9ca238df117d9.setIcon(icon_ed43c9d800d4fd1e42df0aba60305e32);
+        
+    
+        var popup_0371629cc640513bcb3c81e21d29eaaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5abc3167d1c7f7170e75362b75223e1b = $(`<div id="html_5abc3167d1c7f7170e75362b75223e1b" style="width: 100.0%; height: 100.0%;">School: st josephs college<br>Median Study Score: 32.0</div>`)[0];
+                popup_0371629cc640513bcb3c81e21d29eaaf.setContent(html_5abc3167d1c7f7170e75362b75223e1b);
+            
+        
+
+        marker_a81ddfbb51c804c849c9ca238df117d9.bindPopup(popup_0371629cc640513bcb3c81e21d29eaaf)
+        ;
+
+        
+    
+    
+            var marker_05295f98c420f523131f32fd2b911e59 = L.marker(
+                [-37.75793, 145.06759],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_6d173061789692e88eb0ed7116e5ee97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_05295f98c420f523131f32fd2b911e59.setIcon(icon_6d173061789692e88eb0ed7116e5ee97);
+        
+    
+        var popup_ac1f120b6cded45b67c1618ab52f7896 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47bef1e5d468373cce5ad5105049e9ea = $(`<div id="html_47bef1e5d468373cce5ad5105049e9ea" style="width: 100.0%; height: 100.0%;">School: our lady of mercy college<br>Median Study Score: 32.0</div>`)[0];
+                popup_ac1f120b6cded45b67c1618ab52f7896.setContent(html_47bef1e5d468373cce5ad5105049e9ea);
+            
+        
+
+        marker_05295f98c420f523131f32fd2b911e59.bindPopup(popup_ac1f120b6cded45b67c1618ab52f7896)
+        ;
+
+        
+    
+    
+            var marker_b2da9233565d80e0c8c7cafd674ec8f6 = L.marker(
+                [-37.53924, 143.83083],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_630699aa619768eaf04400ada9faa1c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b2da9233565d80e0c8c7cafd674ec8f6.setIcon(icon_630699aa619768eaf04400ada9faa1c8);
+        
+    
+        var popup_7b1d4b1b72df70e1ae556f1e9db56887 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38cb92dd9c52f42656c63818f269e403 = $(`<div id="html_38cb92dd9c52f42656c63818f269e403" style="width: 100.0%; height: 100.0%;">School: ballarat grammar<br>Median Study Score: 32.0</div>`)[0];
+                popup_7b1d4b1b72df70e1ae556f1e9db56887.setContent(html_38cb92dd9c52f42656c63818f269e403);
+            
+        
+
+        marker_b2da9233565d80e0c8c7cafd674ec8f6.bindPopup(popup_7b1d4b1b72df70e1ae556f1e9db56887)
+        ;
+
+        
+    
+    
+            var marker_98b178f29210fae399c469141f3cb566 = L.marker(
+                [-37.90216, 145.08608],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_e5c54b1b9ec6afcc2e636a2e34866eae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_98b178f29210fae399c469141f3cb566.setIcon(icon_e5c54b1b9ec6afcc2e636a2e34866eae);
+        
+    
+        var popup_25cd7dca3259fb1f4567e4e38b29eaf5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6956fb0a4117ae9d9f83173f88b22e0f = $(`<div id="html_6956fb0a4117ae9d9f83173f88b22e0f" style="width: 100.0%; height: 100.0%;">School: sacred heart girls college<br>Median Study Score: 32.0</div>`)[0];
+                popup_25cd7dca3259fb1f4567e4e38b29eaf5.setContent(html_6956fb0a4117ae9d9f83173f88b22e0f);
+            
+        
+
+        marker_98b178f29210fae399c469141f3cb566.bindPopup(popup_25cd7dca3259fb1f4567e4e38b29eaf5)
+        ;
+
+        
+    
+    
+            var marker_6df351c1493626a2dabc7d14f1d546c4 = L.marker(
+                [-37.78296, 145.27291],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_e993de2fb77c8594fd442ef0e81f9dbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6df351c1493626a2dabc7d14f1d546c4.setIcon(icon_e993de2fb77c8594fd442ef0e81f9dbd);
+        
+    
+        var popup_9e9207a1e3f6c01d24085d255a534209 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0238f2b55c8dbf851561d56980496993 = $(`<div id="html_0238f2b55c8dbf851561d56980496993" style="width: 100.0%; height: 100.0%;">School: luther college<br>Median Study Score: 32.0</div>`)[0];
+                popup_9e9207a1e3f6c01d24085d255a534209.setContent(html_0238f2b55c8dbf851561d56980496993);
+            
+        
+
+        marker_6df351c1493626a2dabc7d14f1d546c4.bindPopup(popup_9e9207a1e3f6c01d24085d255a534209)
+        ;
+
+        
+    
+    
+            var marker_1c08a5f037fbca955656996cf0174429 = L.marker(
+                [-37.89049, 145.29509],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_7ed90f550c754b63c8c08cfcb08405c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1c08a5f037fbca955656996cf0174429.setIcon(icon_7ed90f550c754b63c8c08cfcb08405c3);
+        
+    
+        var popup_b9fffd161747305c79dba01e2a84498a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7bb2f0c9b41c49fa37652c01fcf1921 = $(`<div id="html_e7bb2f0c9b41c49fa37652c01fcf1921" style="width: 100.0%; height: 100.0%;">School: st josephs college<br>Median Study Score: 32.0</div>`)[0];
+                popup_b9fffd161747305c79dba01e2a84498a.setContent(html_e7bb2f0c9b41c49fa37652c01fcf1921);
+            
+        
+
+        marker_1c08a5f037fbca955656996cf0174429.bindPopup(popup_b9fffd161747305c79dba01e2a84498a)
+        ;
+
+        
+    
+    
+            var marker_bbdd04a33feba06b199940c773527f74 = L.marker(
+                [-37.9152, 145.16614],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_00c7ad7fca1e177e1e9767d3baf64a19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bbdd04a33feba06b199940c773527f74.setIcon(icon_00c7ad7fca1e177e1e9767d3baf64a19);
+        
+    
+        var popup_b84c7c882d983b2ab3801cee70302781 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7405c33b02b2d73b978db2610c434ff4 = $(`<div id="html_7405c33b02b2d73b978db2610c434ff4" style="width: 100.0%; height: 100.0%;">School: mazenod college<br>Median Study Score: 32.0</div>`)[0];
+                popup_b84c7c882d983b2ab3801cee70302781.setContent(html_7405c33b02b2d73b978db2610c434ff4);
+            
+        
+
+        marker_bbdd04a33feba06b199940c773527f74.bindPopup(popup_b84c7c882d983b2ab3801cee70302781)
+        ;
+
+        
+    
+    
+            var marker_ae39356619f4c48c6a8d58dbb3b5d5c0 = L.marker(
+                [-37.70044, 145.19223],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_e1d392badfe22dc228276a84d3d02f50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae39356619f4c48c6a8d58dbb3b5d5c0.setIcon(icon_e1d392badfe22dc228276a84d3d02f50);
+        
+    
+        var popup_6b7464e83ab6f1d9636bfd1d11c02544 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3174cc888ec67f2545c867135f8946ac = $(`<div id="html_3174cc888ec67f2545c867135f8946ac" style="width: 100.0%; height: 100.0%;">School: eltham college<br>Median Study Score: 32.0</div>`)[0];
+                popup_6b7464e83ab6f1d9636bfd1d11c02544.setContent(html_3174cc888ec67f2545c867135f8946ac);
+            
+        
+
+        marker_ae39356619f4c48c6a8d58dbb3b5d5c0.bindPopup(popup_6b7464e83ab6f1d9636bfd1d11c02544)
+        ;
+
+        
+    
+    
+            var marker_31dc8f7511d6d64186b065725f46fde3 = L.marker(
+                [-37.88014, 145.2153],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_0e01bbb22b1e77b5642a4adaa0eab53d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_31dc8f7511d6d64186b065725f46fde3.setIcon(icon_0e01bbb22b1e77b5642a4adaa0eab53d);
+        
+    
+        var popup_d68dc99bdd2639f6503c248e9fead044 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e3a3bcf21eef104b6337debf614b5a8 = $(`<div id="html_8e3a3bcf21eef104b6337debf614b5a8" style="width: 100.0%; height: 100.0%;">School: waverley christian college<br>Median Study Score: 32.0</div>`)[0];
+                popup_d68dc99bdd2639f6503c248e9fead044.setContent(html_8e3a3bcf21eef104b6337debf614b5a8);
+            
+        
+
+        marker_31dc8f7511d6d64186b065725f46fde3.bindPopup(popup_d68dc99bdd2639f6503c248e9fead044)
+        ;
+
+        
+    
+    
+            var marker_0c62fde297e6009fb73990dda7704697 = L.marker(
+                [-37.87387, 145.24464],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_5541ddc314824b1d74ff16ea8bea451e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0c62fde297e6009fb73990dda7704697.setIcon(icon_5541ddc314824b1d74ff16ea8bea451e);
+        
+    
+        var popup_82e1a381b1948517748f19128fb22a68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eabf94576d0674dc7be1f03997f282e4 = $(`<div id="html_eabf94576d0674dc7be1f03997f282e4" style="width: 100.0%; height: 100.0%;">School: st andrews christian college<br>Median Study Score: 32.0</div>`)[0];
+                popup_82e1a381b1948517748f19128fb22a68.setContent(html_eabf94576d0674dc7be1f03997f282e4);
+            
+        
+
+        marker_0c62fde297e6009fb73990dda7704697.bindPopup(popup_82e1a381b1948517748f19128fb22a68)
+        ;
+
+        
+    
+    
+            var marker_dbb208fd662c375a8af2907d8ada8ace = L.marker(
+                [-37.69027, 144.43159],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_b4c59cc1114d8eb2467a94e7beabb5e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dbb208fd662c375a8af2907d8ada8ace.setIcon(icon_b4c59cc1114d8eb2467a94e7beabb5e3);
+        
+    
+        var popup_88f54885c11fd3f0cbc3cf356be566de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2bd7dffad45cbc8162526c936cea22b = $(`<div id="html_e2bd7dffad45cbc8162526c936cea22b" style="width: 100.0%; height: 100.0%;">School: bacchus marsh grammar<br>Median Study Score: 32.0</div>`)[0];
+                popup_88f54885c11fd3f0cbc3cf356be566de.setContent(html_e2bd7dffad45cbc8162526c936cea22b);
+            
+        
+
+        marker_dbb208fd662c375a8af2907d8ada8ace.bindPopup(popup_88f54885c11fd3f0cbc3cf356be566de)
+        ;
+
+        
+    
+    
+            var marker_5d0404ebd39bd9cc2bcd51e317443a37 = L.marker(
+                [-37.70518, 144.97169],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_80e919a760b4823d5f82e5095a3573bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5d0404ebd39bd9cc2bcd51e317443a37.setIcon(icon_80e919a760b4823d5f82e5095a3573bd);
+        
+    
+        var popup_becc1735ac9718795945b04d35d04e73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f39c616646a82a8280163cbb02423ed = $(`<div id="html_1f39c616646a82a8280163cbb02423ed" style="width: 100.0%; height: 100.0%;">School: darul ulum college of victoria<br>Median Study Score: 32.0</div>`)[0];
+                popup_becc1735ac9718795945b04d35d04e73.setContent(html_1f39c616646a82a8280163cbb02423ed);
+            
+        
+
+        marker_5d0404ebd39bd9cc2bcd51e317443a37.bindPopup(popup_becc1735ac9718795945b04d35d04e73)
+        ;
+
+        
+    
+    
+            var marker_9b185f81bc86576b1f272df5b6eb0e8b = L.marker(
+                [-37.6863, 144.5424],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_1ce1e146474a635ddf8d8d6130c6e133 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9b185f81bc86576b1f272df5b6eb0e8b.setIcon(icon_1ce1e146474a635ddf8d8d6130c6e133);
+        
+    
+        var popup_5ac7cb2e1c8e523b8cd71cf422032591 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff54fa27a1cdc0ec6a5385c3bdd89964 = $(`<div id="html_ff54fa27a1cdc0ec6a5385c3bdd89964" style="width: 100.0%; height: 100.0%;">School: oneschool global vic<br>Median Study Score: 32.0</div>`)[0];
+                popup_5ac7cb2e1c8e523b8cd71cf422032591.setContent(html_ff54fa27a1cdc0ec6a5385c3bdd89964);
+            
+        
+
+        marker_9b185f81bc86576b1f272df5b6eb0e8b.bindPopup(popup_5ac7cb2e1c8e523b8cd71cf422032591)
+        ;
+
+        
+    
+    
+            var marker_c0a17814e6989267b0784a7b89d9c34a = L.marker(
+                [-37.62426, 145.03753],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_b624a0fdd3b3a22c35e7d5d56f0ed6e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c0a17814e6989267b0784a7b89d9c34a.setIcon(icon_b624a0fdd3b3a22c35e7d5d56f0ed6e2);
+        
+    
+        var popup_16d6c7be61f576a9aeea2ace8c46fd81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8956a5d964b26de53f00ab3132614e05 = $(`<div id="html_8956a5d964b26de53f00ab3132614e05" style="width: 100.0%; height: 100.0%;">School: al siraat college<br>Median Study Score: 32.0</div>`)[0];
+                popup_16d6c7be61f576a9aeea2ace8c46fd81.setContent(html_8956a5d964b26de53f00ab3132614e05);
+            
+        
+
+        marker_c0a17814e6989267b0784a7b89d9c34a.bindPopup(popup_16d6c7be61f576a9aeea2ace8c46fd81)
+        ;
+
+        
+    
+    
+            var marker_22455732e3649fcba90807f4d5ddc343 = L.marker(
+                [-37.93959, 143.21674],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_31294a12407674860c2412f366523b5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_22455732e3649fcba90807f4d5ddc343.setIcon(icon_31294a12407674860c2412f366523b5c);
+        
+    
+        var popup_e3728425a0c73972207bced8ae9d46cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50609fb1050bf0b5acf1c7493fb7fe37 = $(`<div id="html_50609fb1050bf0b5acf1c7493fb7fe37" style="width: 100.0%; height: 100.0%;">School: derrinallum p college<br>Median Study Score: 31.0</div>`)[0];
+                popup_e3728425a0c73972207bced8ae9d46cb.setContent(html_50609fb1050bf0b5acf1c7493fb7fe37);
+            
+        
+
+        marker_22455732e3649fcba90807f4d5ddc343.bindPopup(popup_e3728425a0c73972207bced8ae9d46cb)
+        ;
+
+        
+    
+    
+            var marker_639a0235602b81cd826c5fbab3c3a2ef = L.marker(
+                [-38.75352, 143.66051],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_7b2c83744401f394e04ca15c26c9357a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_639a0235602b81cd826c5fbab3c3a2ef.setIcon(icon_7b2c83744401f394e04ca15c26c9357a);
+        
+    
+        var popup_14225aa85dfeec0c1dd835ae8e8fc51c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89f3f1a8f57632078a2bc73b24219bfb = $(`<div id="html_89f3f1a8f57632078a2bc73b24219bfb" style="width: 100.0%; height: 100.0%;">School: apollo bay p college<br>Median Study Score: 31.0</div>`)[0];
+                popup_14225aa85dfeec0c1dd835ae8e8fc51c.setContent(html_89f3f1a8f57632078a2bc73b24219bfb);
+            
+        
+
+        marker_639a0235602b81cd826c5fbab3c3a2ef.bindPopup(popup_14225aa85dfeec0c1dd835ae8e8fc51c)
+        ;
+
+        
+    
+    
+            var marker_29d6c165c027b61141552a51b4689a80 = L.marker(
+                [-37.83988, 145.04507],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_aac3fa280beab8f312bb408cb8f12675 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_29d6c165c027b61141552a51b4689a80.setIcon(icon_aac3fa280beab8f312bb408cb8f12675);
+        
+    
+        var popup_a73416e710a854714c8f20f46951cd05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1132fe1902cfeb81edfaaa15f33fe25 = $(`<div id="html_f1132fe1902cfeb81edfaaa15f33fe25" style="width: 100.0%; height: 100.0%;">School: auburn high school<br>Median Study Score: 31.0</div>`)[0];
+                popup_a73416e710a854714c8f20f46951cd05.setContent(html_f1132fe1902cfeb81edfaaa15f33fe25);
+            
+        
+
+        marker_29d6c165c027b61141552a51b4689a80.bindPopup(popup_a73416e710a854714c8f20f46951cd05)
+        ;
+
+        
+    
+    
+            var marker_9997e979a9a5590fd5deaedef1ba5be8 = L.marker(
+                [-37.92016, 145.01912],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_abb0ed6199470812a5d8207dc8726a27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9997e979a9a5590fd5deaedef1ba5be8.setIcon(icon_abb0ed6199470812a5d8207dc8726a27);
+        
+    
+        var popup_56d3e2f16d54aca3a9d04a85c853b9ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8025b7546321fa2f84fa2977cbd1d02 = $(`<div id="html_f8025b7546321fa2f84fa2977cbd1d02" style="width: 100.0%; height: 100.0%;">School: brighton secondary college<br>Median Study Score: 31.0</div>`)[0];
+                popup_56d3e2f16d54aca3a9d04a85c853b9ce.setContent(html_f8025b7546321fa2f84fa2977cbd1d02);
+            
+        
+
+        marker_9997e979a9a5590fd5deaedef1ba5be8.bindPopup(popup_56d3e2f16d54aca3a9d04a85c853b9ce)
+        ;
+
+        
+    
+    
+            var marker_8ab0918a18aae12c83eb831d92a590c8 = L.marker(
+                [-37.74712, 144.89775],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_0e18de28ac7af67dcc126191dfd1b21e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8ab0918a18aae12c83eb831d92a590c8.setIcon(icon_0e18de28ac7af67dcc126191dfd1b21e);
+        
+    
+        var popup_3daeefd588fc165e53564b04cb27fd00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0023097f8be421ddf4bd1fd63c538a8 = $(`<div id="html_d0023097f8be421ddf4bd1fd63c538a8" style="width: 100.0%; height: 100.0%;">School: buckley park college<br>Median Study Score: 31.0</div>`)[0];
+                popup_3daeefd588fc165e53564b04cb27fd00.setContent(html_d0023097f8be421ddf4bd1fd63c538a8);
+            
+        
+
+        marker_8ab0918a18aae12c83eb831d92a590c8.bindPopup(popup_3daeefd588fc165e53564b04cb27fd00)
+        ;
+
+        
+    
+    
+            var marker_e97bd6899532ef6d993e19d182ba15b3 = L.marker(
+                [-36.37078, 142.97396],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_f2819b1cf72b6b598e8631d9f5e523ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e97bd6899532ef6d993e19d182ba15b3.setIcon(icon_f2819b1cf72b6b598e8631d9f5e523ba);
+        
+    
+        var popup_c172a0fd7199cedcf1f3d188cc746043 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6abd59ecbf62a82fb929e7c7722f898a = $(`<div id="html_6abd59ecbf62a82fb929e7c7722f898a" style="width: 100.0%; height: 100.0%;">School: donald high school<br>Median Study Score: 31.0</div>`)[0];
+                popup_c172a0fd7199cedcf1f3d188cc746043.setContent(html_6abd59ecbf62a82fb929e7c7722f898a);
+            
+        
+
+        marker_e97bd6899532ef6d993e19d182ba15b3.bindPopup(popup_c172a0fd7199cedcf1f3d188cc746043)
+        ;
+
+        
+    
+    
+            var marker_362732b15724e461f031b6d617315022 = L.marker(
+                [-37.79555, 145.06336],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_dd1277cb339bfe6aa41e4427e277df34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_362732b15724e461f031b6d617315022.setIcon(icon_dd1277cb339bfe6aa41e4427e277df34);
+        
+    
+        var popup_14d029c20f2aa26c7c1cbbae2a958ebf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a781ea3fc47bec4915f9e29895b191d0 = $(`<div id="html_a781ea3fc47bec4915f9e29895b191d0" style="width: 100.0%; height: 100.0%;">School: kew high school<br>Median Study Score: 31.0</div>`)[0];
+                popup_14d029c20f2aa26c7c1cbbae2a958ebf.setContent(html_a781ea3fc47bec4915f9e29895b191d0);
+            
+        
+
+        marker_362732b15724e461f031b6d617315022.bindPopup(popup_14d029c20f2aa26c7c1cbbae2a958ebf)
+        ;
+
+        
+    
+    
+            var marker_d49c62b658e236fe242c8a030db61623 = L.marker(
+                [-37.77416, 144.98971],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_140390b20929ccec6df267732b8f1ac1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d49c62b658e236fe242c8a030db61623.setIcon(icon_140390b20929ccec6df267732b8f1ac1);
+        
+    
+        var popup_e0272fb8ec77c1a037c80ba8e5d5a12c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0300f0d01cb1c5d0269fd8b2834f0d3f = $(`<div id="html_0300f0d01cb1c5d0269fd8b2834f0d3f" style="width: 100.0%; height: 100.0%;">School: northcote high school<br>Median Study Score: 31.0</div>`)[0];
+                popup_e0272fb8ec77c1a037c80ba8e5d5a12c.setContent(html_0300f0d01cb1c5d0269fd8b2834f0d3f);
+            
+        
+
+        marker_d49c62b658e236fe242c8a030db61623.bindPopup(popup_e0272fb8ec77c1a037c80ba8e5d5a12c)
+        ;
+
+        
+    
+    
+            var marker_ba3c2bdb10c730a5df2b04b8bd88f9db = L.marker(
+                [-37.74553, 144.80841],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_fa508fdb88bfb50a1ea8da5bb1c970d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba3c2bdb10c730a5df2b04b8bd88f9db.setIcon(icon_fa508fdb88bfb50a1ea8da5bb1c970d9);
+        
+    
+        var popup_855722f9a90fca561524e3aa113a2184 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c93b36e4e04d6392632cfc8119f64e5c = $(`<div id="html_c93b36e4e04d6392632cfc8119f64e5c" style="width: 100.0%; height: 100.0%;">School: st albans secondary college<br>Median Study Score: 31.0</div>`)[0];
+                popup_855722f9a90fca561524e3aa113a2184.setContent(html_c93b36e4e04d6392632cfc8119f64e5c);
+            
+        
+
+        marker_ba3c2bdb10c730a5df2b04b8bd88f9db.bindPopup(popup_855722f9a90fca561524e3aa113a2184)
+        ;
+
+        
+    
+    
+            var marker_eedd841ed2561a6d4078ca29cf6df01a = L.marker(
+                [-37.79698, 144.95538],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_326379fc8a969cec01cccafdbcfc7217 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eedd841ed2561a6d4078ca29cf6df01a.setIcon(icon_326379fc8a969cec01cccafdbcfc7217);
+        
+    
+        var popup_0c51359f2d59fa25a4c4e1dbca2b8eea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd783cc56c1e10d71d41fe29a482bbe9 = $(`<div id="html_cd783cc56c1e10d71d41fe29a482bbe9" style="width: 100.0%; height: 100.0%;">School: university high school<br>Median Study Score: 31.0</div>`)[0];
+                popup_0c51359f2d59fa25a4c4e1dbca2b8eea.setContent(html_cd783cc56c1e10d71d41fe29a482bbe9);
+            
+        
+
+        marker_eedd841ed2561a6d4078ca29cf6df01a.bindPopup(popup_0c51359f2d59fa25a4c4e1dbca2b8eea)
+        ;
+
+        
+    
+    
+            var marker_2f1b2445055e0d8afeef0b8670cdc57b = L.marker(
+                [-38.05369, 145.34741],
+                {}
+            ).addTo(map_73e5df3086506ed03db2a17abf7af4cf);
+        
+    
+            var icon_e2ed61e4d7689d2320d1a69129c87b03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-xsign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2f1b2445055e0d8afeef0b8670cdc57b.setIcon(icon_e2ed61e4d7689d2320d1a69129c87b03);
+        
+    
+        var popup_393f13cd6e1838b128e8718f83e8fb09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9ee2c9fb9ef9a36ccd3c834b8f9e707 = $(`<div id="html_a9ee2c9fb9ef9a36ccd3c834b8f9e707" style="width: 100.0%; height: 100.0%;">School: kambrya college<br>Median Study Score: 31.0</div>`)[0];
+                popup_393f13cd6e1838b128e8718f83e8fb09.setContent(html_a9ee2c9fb9ef9a36ccd3c834b8f9e707);
+            
+        
+
+        marker_2f1b2445055e0d8afeef0b8670cdc57b.bindPopup(popup_393f13cd6e1838b128e8718f83e8fb09)
+        ;
+
+        
+    
+</script>
+</html>

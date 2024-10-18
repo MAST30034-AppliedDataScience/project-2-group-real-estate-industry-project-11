@@ -13,7 +13,7 @@ The repository has been split up into 4 main folders:
 
 Our summary notebook is split up into mutliple smaller jupyter notebooks to allow for ease of reading.
 
-All of the summary notebooks can be found at `notebooks/4. analysis`. In particular prioritise reading:
+All of the summary notebooks can be found at `notebooks/4. analysis` in the `a. EDA` and `b. modelling` folders. In particular prioritise reading:
 1. `a. EDA/exploratory`
 2. `a. EDA/folium_visualisations` (which allows you to see how different features are distributed across Victoria)
 
@@ -21,6 +21,10 @@ Then the answer to the big 3 questions are located in:
 3. `b. modelling/liveability`
 4. `b. modelling/forecasting`
 5. `b. modelling/domain_features_modeling`
+
+The `c. supporting visualisations` contains some additional visualisations of various domain and geolocation related data.
+
+## Running the Scripts
 
 We recommend running through the scripts in the following order to obtain the data. Note that the domain data will take a long time to collect in the landing layer. Therefore we'd recommend skipping stage  which then requires excluding running any notebooks contained in a domain folder as it is dependent on that data.
 
