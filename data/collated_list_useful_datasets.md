@@ -1,12 +1,5 @@
 # A list of accessible datasets for future use
 
-(
-At the bare minimum, groups should aim to find the proximity to the closest train station or Melbourne CBD.
-Proximity/Distance should be calculated via routes (as travelled by car).
-This can be done by leveraging an API such as Open Route Service.
-One example is Open Route Service, examples have been provided at the end of this document.
-)
-
 Time dependent:
 
     - Interest rates
