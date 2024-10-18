@@ -35,7 +35,12 @@ We recommend running through the scripts in the following order to obtain the da
 
 ## Summary of Challenges
 
-
+Within the notebooks are some of the challenges we faced as a team. In particular some highlighted ones are:
+1. Joins: data was of different granularity, or even different region types (e.g. SA2 vs postcode vs subrubs), so some complex geopandas operations had to be performed to combine and aggregate across different regions. This is explained in depth at `notebooks/2. raw/sa2_join` and is *highly recommended to read*.
+2. Scraping: as Domain.com has limits to how many listings you can query at once, we had to first calculate search bins based on prices to make sure we get the right number of properties. This approach is explained in more detail in `scripts/1. downloading/scrape_domain.py`.
+3. Visualisation: different datasets had different time periods and also frequencies (e.g. 2016-2020 vs 2017-2021). We made sure to source only data with enough of an overlapping period that would work for our analysis which was 4 years.
+4. Extrapolation: at times we had to extrapolate or interpolate data to have more specific time series as data as missing. This is particularly evident in the future predictions of rental prices.
+5. At times the data has had to be rotated (onehot encoded or reverse one hot encoded), which has proven to be challenging.
 
 ## Open Route API
 
